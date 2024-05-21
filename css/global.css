@@ -15,7 +15,13 @@ h2{
     color: #fff;
 } 
 
-
 main{
     background-color: #EA7209;
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
 }

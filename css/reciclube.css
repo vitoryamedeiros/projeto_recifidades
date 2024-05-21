@@ -61,11 +61,9 @@
     display: flex;
     flex-direction: row;    
     font-size: 2rem;
-
 }
 .title.beneficios > img{
     width: 50px;
     height: 50px;
     padding: 0px 10px;
-
 }
