@@ -1,0 +1,71 @@
+
+.reciclube{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    margin: 50px 100px;
+    background-color: #0363AD;
+    color: #fff;
+}
+
+.header.reciclube{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; 
+    font-size: 3rem;
+}
+
+.title.reciclube{
+    display: flex;
+    flex-direction: row;
+}
+.title.reciclube > img{
+    width: 50px;
+    padding: 0px 40px;
+}
+
+.text-description{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    text-align: center;
+}
+
+.section-preco{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+}
+
+.preco-relative{
+    display: flex;
+    position: relative;
+}
+
+.span-preco{
+    font-size: 10rem;
+}
+
+.section-beneficios{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+}
+
+.title.beneficios{
+    display: flex;
+    flex-direction: row;    
+    font-size: 2rem;
+
+}
+.title.beneficios > img{
+    width: 50px;
+    height: 50px;
+    padding: 0px 10px;
+
+}

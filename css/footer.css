@@ -1,0 +1,57 @@
+
+footer{   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    background-color: #99004A;
+    color: #fff;
+    
+}
+
+header .footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    font-size: 2rem;
+}
+
+.footer.title{
+    padding-top: 30px;
+    font-family: "Roboto Condensed", sans-serif;
+}
+
+.laursa-footer{
+    display: flex;
+    flex-direction: column;
+    width: 300px; 
+}
+
+
+hr{
+    width: 70vw;
+}
+
+.creattors{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+}
+
+.span-footer{
+    color: #D57CA8;
+    font-weight: 600;
+    padding: 15px 0px;
+}
+
+.direitos{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 5px;
+    color: #fff;
+    background-color: #EA7209;
+    font-family: "Roboto Condensed";
+}
