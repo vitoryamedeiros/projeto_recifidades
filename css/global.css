@@ -13,6 +13,8 @@
 h2{
     font-family: 'Thinman';
     color: #fff;
+    letter-spacing: .5rem;
+    font-weight: 100;
 } 
 
 main{
