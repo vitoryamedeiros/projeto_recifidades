@@ -1,0 +1,13 @@
+
+.header-culture{
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-between; */
+    align-items: center; 
+}
+
+/* .section-artists{
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    grid-template-rows: 2fr 2fr;
+} */

@@ -27,3 +27,17 @@ section{
     justify-content: center;
     align-items: center; 
 }
+
+.head-sections{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 40px;
+    font-size: 2rem;
+}
+
+.head-sections.icon-brilho{
+    width: 50px;
+    height: 50px;
+    padding: 0px 10px;
+}
