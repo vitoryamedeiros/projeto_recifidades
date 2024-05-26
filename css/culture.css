@@ -11,3 +11,18 @@
     grid-template-columns: 2fr 2fr;
     grid-template-rows: 2fr 2fr;
 } */
+
+.cards-ritmos{
+    display: flex;
+    gap: 100px;
+    
+}
+
+.card-brega,.card-brega-funk,.card-maracatu,.card-ciranda,.card-manguebeat,.card-caboclinho,.card-frevo,.card-forro{
+    background-color: #0363AD;
+    border: solid 3px #0F6AB1;
+    border-radius: 15px;
+    color: #E5F2E5;
+    width: 403px;
+    height: 702px;
+}
