@@ -28,16 +28,23 @@ section{
     align-items: center; 
 }
 
-.head-sections{
+.head-sections,
+.section-subtitle{
     display: flex;
     flex-direction: row;
     justify-content: center;
     margin-top: 40px;
     font-size: 2rem;
+    color: #fff;
 }
 
 .head-sections.icon-brilho{
     width: 50px;
     height: 50px;
+    padding: 0px 10px;
+}
+.section-subtitle > img{
+    width: 35px;
+    height: 35px;
     padding: 0px 10px;
 }

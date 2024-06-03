@@ -6,19 +6,38 @@
     align-items: center; 
 }
 
-/* .section-artists{
-    display: grid;
-    grid-template-columns: 2fr 2fr;
-    grid-template-rows: 2fr 2fr;
-} */
+.cards-artistas{
+    display: inline-grid;
+    grid-template-columns: auto auto auto;
+}
 
+.artista{
+    background-color: #fff;
+    border: 1px solid rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+}
+
+.foto-artista{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+
+.disco{
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+
+}
 .cards-ritmos{
     display: flex;
     gap: 100px;
-    
 }
 
-.card-brega,.card-brega-funk,.card-maracatu,.card-ciranda,.card-manguebeat,.card-caboclinho,.card-frevo,.card-forro{
+
+.card-ritmo{
     background-color: #0363AD;
     border: solid 3px #0F6AB1;
     border-radius: 15px;
