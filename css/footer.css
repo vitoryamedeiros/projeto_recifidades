@@ -33,11 +33,30 @@ hr{
     width: 70vw;
 }
 
-.creattors{
+.section-creattors{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center; 
+    }
+
+    .creattors{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .name{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; 
+        margin: 0 20px;
+    }
+
+    .icons-footer{
+    display: flex;
+    flex-direction: row;
+    margin: 5px;
 }
 
 .span-footer{

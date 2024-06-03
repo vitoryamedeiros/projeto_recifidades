@@ -37,18 +37,38 @@
 .section-preco{
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center; 
-}
+    }
 
-.preco-relative{
+    .preco-relative{
     display: flex;
+    justify-content: center;
+    align-items: center;
     position: relative;
+    margin: 100px;
+    }
+    .centavos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 1300px;
+    opacity: 0.45;
+    }
+
+    .span-preco{
+    position: relative;
+    -webkit-text-stroke-width: 5px;
+    -webkit-text-stroke-color: #E3006D;
+    font-size: 25rem; color: #fffdd9;
+    font-family: "Varela", sans-serif;
+    rotate: -5deg;
+    }
+
+    .ballon-rs{
+    position: relative;
+    width: 170px;
 }
 
-.span-preco{
-    font-size: 10rem;
-}
 
 .section-beneficios{
     display: flex;
