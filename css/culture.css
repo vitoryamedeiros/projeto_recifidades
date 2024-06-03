@@ -45,3 +45,25 @@
     width: 403px;
     height: 702px;
 }
+
+.gallery{
+    width: 100%;
+    max-width: 2000px;
+    margin: 20px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    }
+
+    .img-gallery {
+    margin: 5px;
+    overflow: hidden;
+  }
+  .img-gallery img {
+    max-width: 500px;
+    height: 250px;
+    transition: transform 0.5s;
+  }
+  .img-gallery:hover img {
+    transform: scale(1.1);
+}
