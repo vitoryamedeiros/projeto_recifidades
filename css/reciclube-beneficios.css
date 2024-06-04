@@ -1,0 +1,63 @@
+@import url("https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap");
+
+
+.section-beneficios{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+}
+
+.header-beneficios{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; 
+}
+
+.title.beneficios{
+    display: flex;
+    flex-direction: row;    
+    font-size: 2rem;
+}
+.title.beneficios > img{
+    width: 50px;
+    height: 50px;
+    padding: 0px 10px;
+}
+
+
+#featuresSection {
+    font-family: Roboto;
+}
+
+#featuresSection img {
+    width: 30%;
+}
+
+.mainHeading {
+    font-size: 30px;
+    font-weight: bold;
+    color: #323f4b;
+
+}
+
+.subheading {
+    color: #323f4b;
+    font-size: 25px;
+    font-weight: 900;
+}
+
+#featuresSection h6 {
+    color: #7b8794;
+}
+
+#featuresSection h2 {
+    color: #ffffff;
+    font-size: 2rem;
+}
+
+#featuresSection p {
+    color: #c4cbd2;
+    font-size: 1rem;
+}
