@@ -3,9 +3,28 @@
   box-sizing: border-box;
 }
 
-h1 {
-  text-align: center;
-  font-family: 'Raleway', sans-serif;
+.section-history{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.banner-history{
+  background-image: url(../assets/shapes/fundo-history.png);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;  
+  width: 1200px;
+
+  /*background-color: #0363AD;
+  padding: 10px 0 0 0; */
+}
+
+.figures{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .timeline {

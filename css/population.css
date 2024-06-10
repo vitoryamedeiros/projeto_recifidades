@@ -1,6 +1,10 @@
 
 .container {
-	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	/* position: relative; */
     margin-top: 30px;
 	/* top: 50%; 
 	transform: translate(-50%, -50%);*/

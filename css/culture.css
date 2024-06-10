@@ -28,14 +28,13 @@
 .disco{
     display: flex;
     flex-direction: row;
-    position: absolute;
-
+    position: relative;
 }
 .cards-ritmos{
     display: flex;
+    flex-direction: row;
     gap: 100px;
 }
-
 
 .card-ritmo{
     background-color: #0363AD;
