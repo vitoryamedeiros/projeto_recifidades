@@ -14,13 +14,25 @@
     text-align: start;    
     padding: 0px 50px;
     width: 50vw;
-    height: 200px;
+    height: 300px;
     color: #fff;
     font-family: "Roboto Condensed", sans-serif;
-    font-size: 1.2rem;
-    background-color: #e1b38aab;
+    font-size: 1.4rem;
+    background-color: #e16900;
     -webkit-box-shadow: 8px 9px 5px 0px rgba(0,0,0,0.12);
     -moz-box-shadow: 8px 9px 5px 0px rgba(0,0,0,0.12);
     box-shadow: 8px 9px 5px 0px rgba(0,0,0,0.12);
     border-radius: 10px;
+}
+
+.boyzinhos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    position: relative;
+    bottom: -80px;
+}
+
+.boyzinhos img{
+    width: 400px;
 }

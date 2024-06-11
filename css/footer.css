@@ -6,7 +6,7 @@ footer{
     align-items: center; 
     background-color: #99004A;
     color: #fff;
-    
+    padding-bottom: 50px;
 }
 
 header .footer{
@@ -22,15 +22,21 @@ header .footer{
     font-family: "Roboto Condensed", sans-serif;
 }
 
-.laursa-footer{
+.center-content{
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 15px 0;
+}
+.laursa-footer{
+    display: flex;
     width: 300px; 
 }
 
-
 hr{
     width: 70vw;
+    margin-top: 10px;
 }
 
 .section-creattors{
@@ -51,13 +57,19 @@ hr{
         justify-content: center;
         align-items: center; 
         margin: 0 20px;
+        font-size: .8rem;
     }
 
     .icons-footer{
     display: flex;
-    flex-direction: row;
+    flex-direction: row;        
     margin: 5px;
+    }
+
+    .icons-footer img{
+    padding: 3px;
 }
+
 
 .span-footer{
     color: #D57CA8;
@@ -71,6 +83,6 @@ hr{
     justify-content: center;
     padding: 5px;
     color: #fff;
-    background-color: #EA7209;
+    background-color: #0363AD;
     font-family: "Roboto Condensed";
 }
