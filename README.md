@@ -7,7 +7,6 @@
 - HTML
 - CSS
 - JAVASCRIPT
+- PHP
 ### 📍 Imagens de Preview
-#### 📱 Mobile Version
-#### 💻 Tablet Version
 #### 🖥️ Desktop Version
