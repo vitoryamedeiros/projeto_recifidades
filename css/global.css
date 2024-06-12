@@ -9,6 +9,7 @@
 *{
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
 }
 
 h2{
@@ -53,4 +54,15 @@ section{
     width: 35px;
     height: 35px;
     padding: 0px 10px;
+}
+
+.arrowTop{
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+}
+
+.arrowTop img{
+    width: 60px;
+    height: 60px;
 }
