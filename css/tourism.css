@@ -22,11 +22,10 @@
     right: -865px;
 }
 
-.card-places{
+.swiper-wrapper{
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     overflow: hidden;
-    
 }
