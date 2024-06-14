@@ -1,8 +1,8 @@
 <?php
-$servername = "localhost";
+$servername = "recificidades";
 $username = "root";
 $password = "";
-$dbname = "fluir";
+$dbname = "recificidades";
 
 // criar conexao
 $con = mysqli_connect($servername, $username, $password, $dbname);
