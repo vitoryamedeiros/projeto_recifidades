@@ -7,27 +7,64 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
 
-.banner-history{
-  background-image: url(../assets/shapes/fundo-history.png);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;  
-  width: 1200px;
+.icon-brilho{
+  width: 60px;
+  position: relative;
+  top: -10px;
+  right: 8px;
+  padding: 10px;
+}
+.banner-history {
+  background-color: #2d68aa;
+  padding: 20px;
+  border-radius: 15px;
+  position: relative;
+  width: 1000px;
+  height: 160px;
+  margin: 20px 0 2px 0;
+  text-align: center;
+  color: white;
 
-  /*background-color: #0363AD;
-  padding: 10px 0 0 0; */
+  background-color: #0363AD;
+  box-shadow: 1px -1px 23px 0px rgba(255,255,255,0.84);
+  -webkit-box-shadow: 1px -1px 23px 0px rgba(255,255,255,0.84);
+  -moz-box-shadow: 1px -1px 23px 0px rgba(255,255,255,0.84);
+  border-radius: 8px 8px 8px 8px;
+  -webkit-border-radius: 8px 8px 8px 8px;
+  -moz-border-radius: 8px 8px 8px 8px;
+
+}
+.banner-history h3 {
+  margin: 10px 0 ;
+  font-size: 3.3rem;
+  font-style: italic;
+  letter-spacing: 4px;
+  font-weight: 400;
+}
+.banner-history span {
+  font-size: 1.7rem;
+  font-weight: 200;
+}
+.banner-history img {
+  position: absolute;
+  transform: translateY(-50%);
+}
+.banner-history img.left {
+  left: 10px;
+  height: 90%;
+  top: 56%;
+
+}
+.banner-history img.right {
+  right: 5px;
+  height: 90%;
+  top: 56%;
 }
 
-.figures{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-
-.timeline {
+/*.timeline {
   position: relative;
   padding: 1rem;
   margin: 0 auto;
@@ -48,9 +85,9 @@
     clear: both;
   }
 }
-
+ 
 .timeline__item {
-  
+  color: #fff;
   padding: 1rem;
   border: 2px solid white;
   border-image: linear-gradient(to right, color 0%,  100%);
@@ -89,7 +126,7 @@
     display: none;
   }
   
-}
+} 
 
 .timeline__title {
   margin: 0;
@@ -101,4 +138,58 @@
   line-height: 1.5;
   font-size: 1rem;
   margin: .5rem 0 0;
+}
+*/
+
+
+/* TIMELINE STYLE */
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.subtitle span {
+  font-size: 14px;
+  display: block;
+}
+
+.timeline {
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  }
+  .timeline img {
+  width: 25%;
+  position: relative;
+  right: -38%;
+  top: -10%;
+}
+.event {
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.392);
+  color: black;
+  padding: 10px;
+  border-radius: 10px;
+  width: 200px;
+  }
+  .event img {
+  width: 100%;
+  }
+  .event:nth-child(1) {
+  top: 10%;
+  left: 10%;
+  }
+  .event:nth-child(2) {
+  top: 20%;
+  left: 40%;
+  }
+  .event:nth-child(3) {
+  top: 50%;
+  left: 10%;
+  }
+  .event:nth-child(4) {
+  top: 80%;
+  left: 50%;
 }
