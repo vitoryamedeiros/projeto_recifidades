@@ -1,3 +1,37 @@
+<?php
+$con = mysqli_connect('localhost', 'root', '', 'recificidades');
+ 
+if (!$con) {
+    die("Falha na conexão com o banco de dados: " . mysqli_connect_error());
+}
+
+// Verifica se o formulário foi enviado
+if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+    // Obtém os dados do formulário
+    $nome = $_POST['nome'];
+    $cpf = $_POST['cpf'];
+    $email =$_POST['email'];
+    $senha = $_POST['senha'];
+    $endereco = $_POST['endereco'];
+    $cidade =$_POST['cidade'];
+
+   
+    // Código SQL para inserir os dados no banco de dados
+    $sql = "INSERT INTO usuarios (nome, cpf, email, senha, endereço, cidade)
+            VALUES ('$nome', '$cpf', '$email', '$senha', '$endereco', '$cidade')";
+
+    // Executa a consulta SQL
+    if (mysqli_query($con, $sql)) {
+        header("Location: " . $_SERVER['PHP_SELF']);
+        exit();
+    } else {
+        echo "Erro ao inserir os dados: " . mysqli_error($con);
+    }
+}
+
+// Fecha a conexão com o banco de dados
+mysqli_close($con);
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -10,26 +44,26 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     
     <!-- CSS IMPORT'S -->
-    <link rel="stylesheet" href="css/global.css">
-    <link rel="stylesheet" href="css/buttons.css">
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/buttons.css">
 
-    <link rel="stylesheet" href="css/header.css">
-    <link rel="stylesheet" href="css/history.css">
-    <link rel="stylesheet" href="css/apresentation.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/history.css">
+    <link rel="stylesheet" href="../css/apresentation.css">
     
-    <link rel="stylesheet" href="css/population.css">
-    <link rel="stylesheet" href="css/tourism.css">
-    <link rel="stylesheet" href="css/carousel.css">
+    <link rel="stylesheet" href="../css/population.css">
+    <link rel="stylesheet" href="../css/tourism.css">
+    <link rel="stylesheet" href="../css/carousel.css">
 
-    <link rel="stylesheet" href="css/culture.css">
+    <link rel="stylesheet" href="../css/culture.css">
     
-    <link rel="stylesheet" href="css/banner-finalizacao.css">
-    <link rel="stylesheet" href="css/reciclube.css">
-    <link rel="stylesheet" href="css/reciclube-beneficios.css">
-    <link rel="stylesheet" href="css/form.css">
+    <link rel="stylesheet" href="../css/banner-finalizacao.css">
+    <link rel="stylesheet" href="../css/reciclube.css">
+    <link rel="stylesheet" href="../css/reciclube-beneficios.css">
+    <link rel="stylesheet" href="../css/form.css">
 
-    <link rel="stylesheet" href="css/footer.css">
-    <!-- <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/> -->
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     
 
     <!-- bootstrap import -->
@@ -55,22 +89,22 @@
                     <li>
                         <a href="index.html">Inicio</a>
                     </li> 
-                    <img src="assets/icons/brilhinho.png" alt="Icone de Brilho"> 
+                    <img src="../assets/icons/brilhinho.png" alt="Icone de Brilho"> 
                     
                     <li>
                         <a href="#history">Historia</a>
                     </li>
-                    <img src="assets/icons/brilhinho.png" alt="Icone de Brilho">
+                    <img src="../assets/icons/brilhinho.png" alt="Icone de Brilho">
                     
                     <li>
                         <a href="#tourism">Turismo</a> 
                     </li>
-                    <img src="assets/icons/brilhinho.png" alt="Icone de Brilho"> 
+                    <img src="../assets/icons/brilhinho.png" alt="Icone de Brilho"> 
                     
                     <li>
                         <a href="#culture">Cultura</a>
                     </li>
-                    <img src="assets/icons/brilhinho.png" alt="Icone de Brilho"> 
+                    <img src="../assets/icons/brilhinho.png" alt="Icone de Brilho"> 
                     
                     <li><a href="#reciclube">Reciclube</a></li>
                 </ul>
@@ -88,11 +122,11 @@
 
                 <div class="background">
                     <div class="predios">
-                        <img src="assets/img/header-banner/rua da aurora-grande.png" alt="prediosbackground" width="2100px">
+                        <img src="../assets/img/header-banner/rua da aurora-grande.png" alt="prediosbackground" width="2100px">
                     </div>
 
                     <div class="pista">
-                        <img src="assets\img\header-banner\pista-grande.png" alt="pistafundo" width="2100px">
+                        <img src="../assets/img/header-banner/pista-grande.png" alt="pistafundo" width="2100px">
                     </div>
                 </div>
             </section>
@@ -114,40 +148,45 @@
             <div class="figure-apresentation">
 
                 <div class="boyzinhos">
-                    <img class="boyzinho um" src="assets/img/stickers/passinho-verde.png" alt="" width="300px">
-                    <img class="boyzinho dois" src="assets/img/stickers/passinho-rosa.png" alt="" width="300px">
+                    <img class="boyzinho um" src="../assets/img/stickers/passinho-verde.png" alt="" width="300px">
+                    <img class="boyzinho dois" src="../assets/img/stickers/passinho-rosa.png" alt="" width="300px">
                 </div>
-                <img class="pista-unica" src="assets/img/header-banner/pista-unica-grande.png" alt="" width="2100px">
+                <img class="pista-unica" src="../assets/img/header-banner/pista-unica-grande.png" alt="" width="2100px">
             </div>
         </section>
 
          <!--BOTÃO VOLTAR PRO TOPO-->
          <div class="arrowTop">
             <a href="#">
-                <img src="./assets/icons/setaTopo.png" alt="seta-topo">
+                <img src="../assets/icons/setaTopo.png" alt="seta-topo">
             </a>
         </div>
         <!-- SECTION HISTORIA -->
         <section id="history" class="section-history">
             <header>
                 <div class="head-sections head-history">
-                    <img class="icon-brilho" src="assets/icons/brilhinho.png" alt="Icone de Brilho"> 
+                    <img class="icon-brilho" src="../assets/icons/brilhinho.png" alt="Icone de Brilho"> 
                     <h2>HISTORIA</h2> 
-                    <img class="icon-brilho" src="assets/icons/brilhinho.png" alt="Icone de Brilho"> 
+                    <img class="icon-brilho" src="../assets/icons/brilhinho.png" alt="Icone de Brilho"> 
                 </div>
 
                 <!-- banner da secao -->
                 <div class="banner-history">
-                    <h3>Bora começar do começo?</h3> 
-                    <span>Desde Duarte Coelho até João Campos</span> 
-                    <img src="assets/img/stickers/duarte-coelho.png" class="left" alt="duarte coelho"> 
-                
-                    <img src="assets/img/stickers/joao-campos.png" class="right" alt="joao campos"> 
+                    <div class="text">
+                        <h3>Bora começar do começo?</h3> 
+                        <span>Desde Duarte Coelho até João Campos</span> 
+                    </div>
+
+                    <div class="figures">
+                        <img src="../assets/img/stickers/duarte-coelho.png" alt="duarte coelho"> 
+                        
+                        <img src="../assets/img/stickers/joao-campos.png" alt="joao campos"> 
+                    </div>
                 </div>
             </header>   
-            
-            
-            <!-- <div class="timeline">
+
+            <div class="timeline">
+
                 <h2 class="timeline__item timeline__item--year">1637</h2>
 
                 <div class="timeline__item">
@@ -232,37 +271,12 @@
                 <h2 class="timeline__item timeline__item--year">2019</h2>
 
             </div>
-            linha do tempo -->
-            
+            <!-- linha do tempo -->
             <section class="timeline">
-
-                <div class="timeline">
-                    <img src="/assets/img/stickers/escultura-brennand.png" alt="Timeline">
-                    <div class="event" style="top: 10%; left: 10%;">
-                        <img src="path_to_image1.png" alt="Evento 1561">
-                        <p>1561</p>
-                        <p>Descrição do evento de 1561</p>
-                    </div>
-                    <div class="event" style="top: 30%; left: 70%;">
-                        <img src="path_to_image2.png" alt="Evento 1650">
-                        <p>1650</p>
-                        <p>Descrição do evento de 1650</p>
-                    </div>
-                    <div class="event" style="top: 50%; left: 10%;">
-                        <img src="path_to_image3.png" alt="Evento 1780">
-                        <p>1780</p>
-                        <p>Descrição do evento de 1780</p>
-                    </div>
-                    <div class="event" style="top: 80%; left: 50%;">
-                        <img src="path_to_image4.png" alt="Evento 2020">
-                        <p>2020</p>
-                        <p>Descrição do evento de 2020</p>
-                    </div>
-                </div>
-                <!-- colocar o png da escultura de brenannd
+                <!-- colocar o png da escultura de brenannd-->
                 <div class="png-brenannd">
-                    <img src="assets/img/stickers/escultura-brennand.png" alt="" width="100px">
-                </div>-->
+                    <img src="../assets/img/stickers/escultura-brennand.png" alt="" width="100px">
+                </div>
             </section>
         </section>
 
@@ -270,9 +284,9 @@
         <section id="population">
             <header class="head-sections">
                 <div class="head-sections head-population">
-                    <img class="icon-brilho" src="assets/icons/brilhinho.png" alt="Icone de Brilho"> 
+                    <img class="icon-brilho" src="../assets/icons/brilhinho.png" alt="Icone de Brilho"> 
                     <h2>POPULACAO</h2> 
-                    <img class="icon-brilho" src="assets/icons/brilhinho.png" alt="Icone de Brilho"> 
+                    <img class="icon-brilho" src="../assets/icons/brilhinho.png" alt="Icone de Brilho"> 
                 </div>
             </header>
 
@@ -347,27 +361,27 @@
         <section id="tourism" class="section-tourism">
             <header class="header-tourism">
                 <div class="head-sections head-tourism">
-                    <img class="icon-brilho" src="assets/icons/brilhinho.png" alt="Icone de Brilho"> 
+                    <img class="icon-brilho" src="../assets/icons/brilhinho.png" alt="Icone de Brilho"> 
                     <h2> TURISMO POR AQUI </h2> 
-                    <img class="icon-brilho" src="assets/icons/brilhinho.png" alt="Icone de Brilho"> 
+                    <img class="icon-brilho" src="../assets/icons/brilhinho.png" alt="Icone de Brilho"> 
                 </div>
                 
                 <span>Bora conhecer os lugares mais famosos de Hellcife!</span> 
 
-                <img class="busao-brt front" src="assets/img/stickers/busao-frente.png" alt="brtfrente"> 
+                <img class="busao-brt front" src="../assets/img/stickers/busao-frente.png" alt="brtfrente"> 
             </header>
 
             <div class="swiper">
                 <!-- Additional required wrapper -->
                 <div class="swiper-wrapper">
                   <!-- Slides -->
-                  <div class="swiper-slide"><img src="./assets/img/lugares/paco-alfandega.png" alt="pacoalfandega"></div>
-                  <div class="swiper-slide"><img src="./assets/img/lugares/cinema-saoluiz.png" alt="cinemasaoluiz"></div>
-                  <div class="swiper-slide">  <img src="./assets/img/lugares/paco-dofrevo.png" alt="pacodofrevo"></div>
-                  <div class="swiper-slide"><img src="./assets/img/lugares/parque-jaqueira.png" alt="parquedajaqueira"></div>
-                  <div class="swiper-slide"><img src="./assets/img/lugares/cais-doporto.png" alt="caisdoporto"></div>
-                  <div class="swiper-slide"> <img src="./assets/img/lugares/ricardo-brennand.png" alt="institutoricardobrennand"></div>
-                  <div class="swiper-slide"> <img src="./assets/img/lugares/praia-bv.png" alt="praiadeboaviagem"></div>
+                  <div class="swiper-slide"><img src="../assets/img/lugares/paco-alfandega.png" alt="pacoalfandega"></div>
+                  <div class="swiper-slide"><img src="../assets/img/lugares/cinema-saoluiz.png" alt="cinemasaoluiz"></div>
+                  <div class="swiper-slide">  <img src="../assets/img/lugares/paco-dofrevo.png" alt="pacodofrevo"></div>
+                  <div class="swiper-slide"><img src="../assets/img/lugares/parque-jaqueira.png" alt="parquedajaqueira"></div>
+                  <div class="swiper-slide"><img src="../assets/img/lugares/cais-doporto.png" alt="caisdoporto"></div>
+                  <div class="swiper-slide"> <img src="../assets/img/lugares/ricardo-brennand.png" alt="institutoricardobrennand"></div>
+                  <div class="swiper-slide"> <img src="../assets/img/lugares/praia-bv.png" alt="praiadeboaviagem"></div>
                   ...
                 </div>
                 <!-- If we need pagination -->
@@ -403,7 +417,7 @@
                     
             
                     
-                    <img class="busao-brt back" src="assets\img\stickers\busao-costa.png" alt="brtcosta"> 
+                    <img class="busao-brt back" src="../assets\img\stickers\busao-costa.png" alt="brtcosta"> 
                     
                     <!-- CARROSSEL ASSOMBRADO -->
                     <div id="myCarousel" class="carousel slide container" data-bs-ride="carousel">
@@ -482,64 +496,64 @@
             <!-- header da secao -->
             <header class="header-culture">
 
-                <img src="./assets/img/stickers/la-ursa.png" alt="Png La Ursa"> 
+                <img src="../assets/img/stickers/la-ursa.png" alt="Png La Ursa"> 
 
                 <div class="head-sections head-culture">
-                    <img class="icon-brilho" src="./assets/icons/brilhinho.png" alt="Icone de Brilho"> 
+                    <img class="icon-brilho" src="../assets/icons/brilhinho.png" alt="Icone de Brilho"> 
 
                     <h2>NOSSA CULTURA</h2> 
                     
-                    <img class="icon-brilho" src="./assets/icons/brilhinho.png" alt="Icone de Brilho"> 
+                    <img class="icon-brilho" src="../assets/icons/brilhinho.png" alt="Icone de Brilho"> 
                 </div>
 
-                <img src="./assets/img/stickers/caboclo-delanca.png" alt="Png Caboclo de Lança"> 
+                <img src="../assets/img/stickers/caboclo-delanca.png" alt="Png Caboclo de Lança"> 
             </header>
 
             <!-- secao de artistas -->
             <section class="section-artists">
                 <!-- subtitulo da secao -->
                 <div class="section-subtitle">
-                    <img src="./assets/icons/brilhinho.png" alt="Icone de Brilho">
+                    <img src="../assets/icons/brilhinho.png" alt="Icone de Brilho">
                     <h5>Artistas Locais</h5>
-                    <img src="./assets/icons/brilhinho.png" alt="Icone de Brilho">
+                    <img src="../assets/icons/brilhinho.png" alt="Icone de Brilho">
                 </div>
                 <!-- card dos artistas -->
                 <div class="cards-artistas">
                     <div class="artista lenine">
-                        <img class="foto-artista" src="./assets/img/artistas/lenine.png" alt="capaLenine">
-                        <img class="disco" src="./assets/img/artistas/vinil.png" alt="vinil">
+                        <img class="foto-artista" src="../assets/img/artistas/lenine.png" alt="capaLenine">
+                        <img class="disco" src="../assets/img/artistas/vinil.png" alt="vinil">
                     </div>
                     <div class="artista reginaldo-rose">
-                        <img class="foto-artista" src="./assets/img/artistas/reginaldo-rossi.png" alt="capaRossi">
-                        <img class="disco" src="./assets/img/artistas/vinil.png" alt="vinil">
+                        <img class="foto-artista" src="../assets/img/artistas/reginaldo-rossi.png" alt="capaRossi">
+                        <img class="disco" src="../assets/img/artistas/vinil.png" alt="vinil">
                     </div>
                     <div class="artista alceu-valenca">
-                        <img class="foto-artista" src="./assets/img/artistas/alceu-valenca.png" alt="capaAlceu">
-                        <img class="disco" src="./assets/img/artistas/vinil.png" alt="vinil">
+                        <img class="foto-artista" src="../assets/img/artistas/alceu-valenca.png" alt="capaAlceu">
+                        <img class="disco" src="../assets/img/artistas/vinil.png" alt="vinil">
                     </div>
                     <div class="artista luiz-gonzaga">
-                        <img class="foto-artista" src="./assets/img/artistas/luiz-gonzaga.png" alt="capaGonzaga">
-                        <img class="disco" src="./assets/img/artistas/vinil.png" alt="vinil">
+                        <img class="foto-artista" src="../assets/img/artistas/luiz-gonzaga.png" alt="capaGonzaga">
+                        <img class="disco" src="../assets/img/artistas/vinil.png" alt="vinil">
                     </div>
                     <div class="artista chico-science">
-                        <img class="foto-artista" src="./assets/img/artistas/chico-science.png" alt="capaChico">
-                        <img class="disco" src="./assets/img/artistas/vinil.png" alt="vinil">
+                        <img class="foto-artista" src="../assets/img/artistas/chico-science.png" alt="capaChico">
+                        <img class="disco" src="../assets/img/artistas/vinil.png" alt="vinil">
                     </div>
                     <div class="artista rafaela-santos">
-                        <img class="foto-artista" src="./assets/img/artistas/rafaela-santos.png" alt="capaRafaela">
-                        <img class="disco" src="./assets/img/artistas/vinil.png" alt="vinil">
+                        <img class="foto-artista" src="../assets/img/artistas/rafaela-santos.png" alt="capaRafaela">
+                        <img class="disco" src="../assets/img/artistas/vinil.png" alt="vinil">
                     </div>
                     <div class="artista joao-gomes">
-                        <img class="foto-artista" src="./assets/img/artistas/joao-gomes.png" alt="capaJoaoGomes">
-                        <img class="disco" src="./assets/img/artistas/vinil.png" alt="vinil">
+                        <img class="foto-artista" src="../assets/img/artistas/joao-gomes.png" alt="capaJoaoGomes">
+                        <img class="disco" src="../assets/img/artistas/vinil.png" alt="vinil">
                     </div>
                     <div class="artista priscila-senna">
-                        <img class="foto-artista" src="./assets/img/artistas/priscila-senna.png" alt="capaSenna">
-                        <img class="disco" src="./assets/img/artistas/vinil.png" alt="vinil">
+                        <img class="foto-artista" src="../assets/img/artistas/priscila-senna.png" alt="capaSenna">
+                        <img class="disco" src="../assets/img/artistas/vinil.png" alt="vinil">
                     </div>
                     <div class="artista conde-so-brega">
-                        <img class="foto-artista" src="./assets/img/artistas/conde-sobrega.png" alt="capaConde">
-                        <img class="disco" src="./assets/img/artistas/vinil.png" alt="vinil">
+                        <img class="foto-artista" src="../assets/img/artistas/conde-sobrega.png" alt="capaConde">
+                        <img class="disco" src="../assets/img/artistas/vinil.png" alt="vinil">
                     </div>
                 </div>
             </section>
@@ -548,9 +562,9 @@
             <section class="section-ritmos">
                 <!-- subtitulo da secao -->
                 <div class="section-subtitle">
-                    <img src="./assets/icons/brilhinho.png" alt="Icone de Brilho">
+                    <img src="../assets/icons/brilhinho.png" alt="Icone de Brilho">
                     <h5>Ritmos Populares</h5>
-                    <img src="./assets/icons/brilhinho.png" alt="Icone de Brilho">
+                    <img src="../assets/icons/brilhinho.png" alt="Icone de Brilho">
                 </div>
                 <!-- cards dos ritmos -->
                 <div class="cards-ritmos">
@@ -607,68 +621,68 @@
             <!-- secao de culinaria -->
             <section class="culinaria">
                 <div class="section-subtitle">
-                    <img src="./assets/icons/brilhinho.png" alt="Icone de Brilho">
+                    <img src="../assets/icons/brilhinho.png" alt="Icone de Brilho">
                     <h5>Culinária</h5>
-                    <img src="./assets/icons/brilhinho.png" alt="Icone de Brilho">
+                    <img src="../assets/icons/brilhinho.png" alt="Icone de Brilho">
                 </div>
                 <div class="gallery">
                     <div class="img-gallery">
                         <a href="https://panelinha.com.br/receita/cuscuz-milho" target="_blank">
-                            <img src="./assets/img/comidas/cuscuz.png" alt="Foto culinaria cuscuz">
+                            <img src="../assets/img/comidas/cuscuz.png" alt="Foto culinaria cuscuz">
                         </a>
                     </div>
 
                     <div class="img-gallery">
                         <a href="https://www.tudogostoso.com.br/receita/15246-bolo-de-rolo-de-recife.html" target="_blank">
-                            <img src="./assets/img/comidas/bolo-rolo.png" alt="Foto culinaria bolo de rolo">
+                            <img src="../assets/img/comidas/bolo-rolo.png" alt="Foto culinaria bolo de rolo">
                         </a>
                     </div>
 
                     <div class="img-gallery">
                         <a href="https://www.tudogostoso.com.br/receita/4928-tapioca.html" target="_blank">
-                            <img src="./assets/img/comidas/tapioca.png" alt="Foto culinaria tapioca">   
+                            <img src="../assets/img/comidas/tapioca.png" alt="Foto culinaria tapioca">   
                         </a>                 
                     </div>
                         
                     <div class="img-gallery">
                         <a href="https://www.tudogostoso.com.br/receita/52835-buchada-deliciosa.html" target="_blank">
-                            <img src="./assets/img/comidas/bolao-depeixe.png" alt="Foto culinaria buxada">
+                            <img src="../assets/img/comidas/bolao-depeixe.png" alt="Foto culinaria buxada">
                         </a>
                     </div>
 
                     <div class="img-gallery">
                         <a href="https://www.tudogostoso.com.br/receita/1444-cartola.html" target="_blank">
-                            <img src="./assets/img/comidas/doce-cartola.png" alt="Foto culinaria doce-cartola">                    
+                            <img src="../assets/img/comidas/doce-cartola.png" alt="Foto culinaria doce-cartola">                    
                         </a>
                     </div>
 
                     <div class="img-gallery">
                         <a href="https://www.tudogostoso.com.br/receita/16617-arrumadinho.html" target="_blank">
-                            <img src="./assets/img/comidas/arrumadinho.png" alt="Foto culinaria arrumadinho">      
+                            <img src="../assets/img/comidas/arrumadinho.png" alt="Foto culinaria arrumadinho">      
                         </a>     
                     </div>
 
                     <div class="img-gallery">
                         <a href="https://www.tudogostoso.com.br/receita/1106-camarao-na-moranga.html" target="_blank">
-                            <img src="./assets/img/comidas/jerimum-moranga.jpg" alt="Foto culinaria camarao moranga">                    
+                            <img src="../assets/img/comidas/jerimum-moranga.jpg" alt="Foto culinaria camarao moranga">                    
                         </a>
                     </div>
 
                     <div class="img-gallery">
                         <a href="https://www.tudogostoso.com.br/receita/2753-cocada.html" target="_blank">
-                            <img src="./assets/img/comidas/cocada.png" alt="Foto culinaria cocada">
+                            <img src="../assets/img/comidas/cocada.png" alt="Foto culinaria cocada">
                         </a>
                     </div>
 
                     <div class="img-gallery">
                         <a href="https://www.tudogostoso.com.br/receita/2620-bolo-souza-leao.html" target="_blank">
-                            <img src="./assets/img/comidas/bolo-souza-leao.jpg" alt="Foto culinaria bolo souza leao">
+                            <img src="../assets/img/comidas/bolo-souza-leao.jpg" alt="Foto culinaria bolo souza leao">
                         </a>
                     </div>
 
                     <div class="img-gallery">
                         <a href="https://www.tudogostoso.com.br/receita/35-pamonha-doce.html" target="_blank">
-                            <img src="./assets/img/comidas/pamonha.png" alt="Foto culinaria pamonha">
+                            <img src="../assets/img/comidas/pamonha.png" alt="Foto culinaria pamonha">
                         </a>
                     </div>
                 </div>
@@ -684,17 +698,17 @@
         <!-- SECTION RECICLUBE -->
         <section id="reciclube" class="reciclube">
             <header class="header reciclube">
-                <img src="assets/img/stickers/tubarao.png" alt="Png do Tubarao" width="200px"> 
+                <img src="../assets/img/stickers/tubarao.png" alt="Png do Tubarao" width="200px"> 
 
                 <div class="title reciclube">
-                    <img src="assets/icons/brilhinho.png" alt="Icone de Brilho"> 
+                    <img src="../assets/icons/brilhinho.png" alt="Icone de Brilho"> 
 
                     <h2>RECICLUBE</h2> 
                     
-                    <img src="assets/icons/brilhinho.png" alt="Icone de Brilho"> 
+                    <img src="../assets/icons/brilhinho.png" alt="Icone de Brilho"> 
                 </div>
 
-                <img src="assets/img/stickers/lausa.png" alt="Png La Ursa" width="200px"> 
+                <img src="../assets/img/stickers/lausa.png" alt="Png La Ursa" width="200px"> 
             </header>
 
             <!-- descricao do que eh o reciclube-->
@@ -711,8 +725,8 @@
                 <h3>Nossa Assinatura MENSAL custa apenas </h3>
 
                 <div class="preco-relative">
-                    <img class="centavos" src="assets/img/stickers/centavos.png" alt="" width="400px" >
-                    <img class="ballon-rs" src="assets/img/stickers/rs.png" alt="" width="80px">
+                    <img class="centavos" src="../assets/img/stickers/centavos.png" alt="" width="400px" >
+                    <img class="ballon-rs" src="../assets/img/stickers/rs.png" alt="" width="80px">
                     <span class="span-preco">0,99</span>
                 </div>
                 <span>E menine, pra tu ve! Ta mais barato que a poca sal e doce no metro!</span>
@@ -721,17 +735,17 @@
             <!-- SECTION BENEFICIOS -->
             <section class="section-beneficios">
                 <header class="header-beneficios">
-                    <img src="assets/img/stickers/tubarao.png" alt="Png do Tubarao" width="100px"> 
+                    <img src="../assets/img/stickers/tubarao.png" alt="Png do Tubarao" width="100px"> 
 
                     <div class="title beneficios">
-                        <img src="assets/icons/brilhinho.png" alt="Icone de Brilho" width="30px"> 
+                        <img src="../assets/icons/brilhinho.png" alt="Icone de Brilho" width="30px"> 
 
                         <h2>BENEFICIOS</h2> 
                         
-                        <img src="assets/icons/brilhinho.png" alt="Icone de Brilho" width="30px"> 
+                        <img src="../assets/icons/brilhinho.png" alt="Icone de Brilho" width="30px"> 
                     </div>
 
-                    <img src="assets/img/stickers/tubarao.png" alt="Png do Tubarao" width="100px"> 
+                    <img src="../assets/img/stickers/tubarao.png" alt="Png do Tubarao" width="100px"> 
                 </header>
 
                 <div class="beneficios">
@@ -787,11 +801,11 @@
             <!-- SECTION COM O FORMULARIO-->
             <section class="section-formulario">
                 <div class="title">
-                    <img src="assets/icons/brilhinho.png" alt="Icone de Brilho" width="30px"> 
+                    <img src="../assets/icons/brilhinho.png" alt="Icone de Brilho" width="30px"> 
                     
                     <h2>QUERO ASSINAR!</h2> 
                 
-                    <img src="assets/icons/brilhinho.png" alt="Icone de Brilho" width="30px"> 
+                    <img src="../assets/icons/brilhinho.png" alt="Icone de Brilho" width="30px"> 
                 </div>
                 
                 <!-- formulario de assinatura -->
@@ -800,31 +814,31 @@
                     <div class="form-row">
                         <div class="form-group col-md-6">
                             <label for="inputName">Nome</label>
-                            <input type="text" id="inputName" class="form-control" placeholder="Lenin" required>
+                            <input type="text" id="inputName" class="form-control" name="nome" placeholder="Lenin" required>
                         </div>
                         <div class="form-group col-md-6">
-                            <label for="inputSurname">Sobrenome</label>
-                            <input type="text" class="form-control" id="inputSurname" placeholder="Abdie" required>
+                            <label for="inputSurname">CPF</label>
+                            <input type="text" class="form-control" id="inputSurname" name="cpf" placeholder="Abdie" required>
                         </div>
                         <div class="form-group col-md-6">
                             <label for="inputEmail4">Email</label>
-                            <input type="email" class="form-control" id="inputEmail4" placeholder="leninabdie@email.com" required>
+                            <input type="email" class="form-control" id="inputEmail4" name="email" placeholder="leninabdie@email.com" required>
                         </div>
                         <div class="form-group col-md-6">
                             <label for="inputPassword4">Senha</label>
-                            <input type="password" class="form-control" id="inputPassword4" placeholder="123@abc" required>
+                            <input type="password" class="form-control" id="inputPassword4" name="senha" placeholder="123@abc" required>
                         </div>
                     </div>
 
                     <div class="form-group">
                         <label for="inputAddress">Endereço</label>
-                        <input type="text" class="form-control" id="inputAddress" placeholder="Av Vinicius de Morais, 25" required>
+                        <input type="text" class="form-control" id="inputAddress" name="endereco" placeholder="Av Vinicius de Morais, 25" required>
                     </div>
 
                     <div class="form-row">
                         <div class="form-group col-md-6">
                             <label for="inputCity">Cidade</label>
-                            <input type="text" class="form-control" id="inputCity" required>
+                            <input type="text" class="form-control" name="cidade" id="inputCity" required>
                         </div>
                     </div>
 
@@ -842,7 +856,7 @@
                         </label>
                       </div>
 
-                    <button class="button-54" role="button">Ir para o pagamento!</button>
+                    <button type="submit" class="button-54" role="button">Ir para o pagamento!</button>
 
                 </form>
             </section>
@@ -856,7 +870,7 @@
             </header>
 
             <div class="center-content">
-                <img src="assets/img/stickers/lausa.png" alt="La ursa" class="laursa-footer">
+                <img src="../assets/img/stickers/lausa.png" alt="La ursa" class="laursa-footer">
                 <a href="#inicio"><button class="button-54" role="button">Voltar pro Topo</button></a>
             </div>
 
@@ -874,10 +888,10 @@
 
                         <div class="icons-footer">
                             <a href="https://github.com/vitoryamedeiros" target="_blank">
-                                <img src="assets/icons/github.png" alt="Github Logo">
+                                <img src="../assets/icons/github.png" alt="Github Logo">
                             </a>
                             <a href="https://www.linkedin.com/in/vitoryamedeiros/" target="_blank">
-                                <img src="assets/icons/linkedin.png" alt="Linkedin Logo">
+                                <img src="../assets/icons/linkedin.png" alt="Linkedin Logo">
                         </div>
                         </a>
                     </div>
@@ -887,10 +901,10 @@
 
                         <div class="icons-footer">
                             <a href="https://github.com/guixjs" target="_blank">
-                                <img src="assets/icons/github.png" alt="Github Logo">
+                                <img src="../assets/icons/github.png" alt="Github Logo">
                             </a>
                             <a href="https://www.linkedin.com/in/guilherme-felix-7195b32ba/" target="_blank">
-                                <img src="assets/icons/linkedin.png" alt="Linkedin Logo">
+                                <img src="../assets/icons/linkedin.png" alt="Linkedin Logo">
                             </a>
                         </div>
                     </div> 
@@ -900,10 +914,10 @@
 
                         <div class="icons-footer">
                             <a href="" target="_blank">
-                                <img src="assets/icons/github.png" alt="Github Logo">
+                                <img src="../assets/icons/github.png" alt="Github Logo">
                             </a>
                             <a href="https://www.linkedin.com/in/izaadora-laís-cunha-neves-7206742a8/" target="_blank">
-                                <img src="assets/icons/linkedin.png" alt="Linkedin Logo">
+                                <img src="../assets/icons/linkedin.png" alt="Linkedin Logo">
                             </a>
                         </div>
                     </div>
@@ -913,10 +927,10 @@
 
                         <div class="icons-footer">
                             <a href="https://github.com/MiguelEudio" target="_blank">
-                                <img src="assets/icons/github.png" alt="Github Logo">
+                                <img src="../assets/icons/github.png" alt="Github Logo">
                             </a>
                             <a href="https://www.linkedin.com/in/miguel-batista-76344022b/" target="_blank">
-                                <img src="assets/icons/linkedin.png" alt="Linkedin Logo">
+                                <img src="../assets/icons/linkedin.png" alt="Linkedin Logo">
                             </a>
                         </div>
                     </div>         
@@ -926,10 +940,10 @@
 
                         <div class="icons-footer">
                             <a href="https://github.com/anabeatrizssouza" target="_blank">
-                                <img src="assets/icons/github.png" alt="Github Logo">
+                                <img src="../assets/icons/github.png" alt="Github Logo">
                             </a>
                             <a href="https://www.linkedin.com/in/ana-beatriz-silva-souza-80bbb2301/" target="_blank">
-                                <img src="assets/icons/linkedin.png" alt="Linkedin Logo">
+                                <img src="../assets/icons/linkedin.png" alt="Linkedin Logo">
                             </a>
                         </div>
                     </div>    
@@ -946,6 +960,6 @@
     <!--====JAVASCRIPT IMPORTS=====-->
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="./js/carrosselCards.js"></script>
+    <script src="../js/carrosselCards.js"></script>
 </body>
 </html>

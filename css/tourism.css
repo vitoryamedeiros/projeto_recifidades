@@ -1,0 +1,31 @@
+
+.section-tourism{
+    margin: 50px;
+    background-color: #0363AD;
+}
+
+.header-tourism{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+.head-tourism{
+    font-size: 2rem;
+}
+
+.busao-brt.front{
+    display: flex;
+    position: relative;
+    right: -865px;
+}
+
+.swiper-wrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}

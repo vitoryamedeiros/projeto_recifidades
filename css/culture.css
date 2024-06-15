@@ -1,0 +1,68 @@
+
+.header-culture{
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-between; */
+    align-items: center; 
+}
+
+.cards-artistas{
+    display: inline-grid;
+    grid-template-columns: auto auto auto;
+}
+
+.artista{
+    background-color: #fff;
+    border: 1px solid rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+}
+
+.foto-artista{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+
+.disco{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+.cards-ritmos{
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+}
+
+.card-ritmo{
+    background-color: #0363AD;
+    border: solid 3px #0F6AB1;
+    border-radius: 15px;
+    color: #E5F2E5;
+    width: 403px;
+    height: 702px;
+}
+
+.gallery{
+    width: 100%;
+    max-width: 2000px;
+    margin: 20px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    }
+
+    .img-gallery {
+    margin: 5px;
+    overflow: hidden;
+  }
+  .img-gallery img {
+    max-width: 500px;
+    height: 250px;
+    transition: transform 0.5s;
+  }
+  .img-gallery:hover img {
+    transform: scale(1.1);
+}

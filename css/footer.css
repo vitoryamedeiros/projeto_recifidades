@@ -1,0 +1,88 @@
+
+footer{   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    background-color: #99004A;
+    color: #fff;
+    padding-bottom: 50px;
+}
+
+header .footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    font-size: 2rem;
+}
+
+.footer.title{
+    padding-top: 30px;
+    font-family: "Roboto Condensed", sans-serif;
+}
+
+.center-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 15px 0;
+}
+.laursa-footer{
+    display: flex;
+    width: 300px; 
+}
+
+hr{
+    width: 70vw;
+    margin-top: 10px;
+}
+
+.section-creattors{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    }
+
+    .creattors{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .name{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; 
+        margin: 0 20px;
+        font-size: .8rem;
+    }
+
+    .icons-footer{
+    display: flex;
+    flex-direction: row;        
+    margin: 5px;
+    }
+
+    .icons-footer img{
+    padding: 3px;
+}
+
+
+.span-footer{
+    color: #D57CA8;
+    font-weight: 600;
+    padding: 15px 0px;
+}
+
+.direitos{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 5px;
+    color: #fff;
+    background-color: #0363AD;
+    font-family: "Roboto Condensed";
+}
