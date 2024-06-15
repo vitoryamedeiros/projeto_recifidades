@@ -1,0 +1,17 @@
+create database recificidades;
+use recificidades;
+-- drop database recificidades;
+
+-- tabela para armazenar informações usuários
+
+CREATE TABLE usuarios(
+id INT AUTO_INCREMENT PRIMARY KEY, 
+nome VARCHAR(70) NOT NULL,
+cpf CHAR(11) UNIQUE NOT NULL,
+telefone VARCHAR (13), 
+email VARCHAR(100),
+senha VARCHAR (150) NOT NULL, 
+endereço VARCHAR (150), 
+cidade VARCHAR (80),
+mensalidade ENUM ('sim','nao') NOT NULL
+);
