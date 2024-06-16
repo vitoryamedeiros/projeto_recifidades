@@ -1,5 +1,5 @@
 <?php
-$servername = "recificidades";
+$servername = "localhost";
 $username = "root";
 $password = "";
 $dbname = "recificidades";
