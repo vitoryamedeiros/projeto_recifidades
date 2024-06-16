@@ -29,6 +29,7 @@
     <link rel="stylesheet" href="css/form.css">
 
     <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="carrosselTeste.css">
     <!-- <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/> -->
     
 
@@ -356,30 +357,47 @@
 
                 <img class="busao-brt front" src="assets/img/stickers/busao-frente.png" alt="brtfrente"> 
             </header>
-
-            <div class="swiper">
-                <!-- Additional required wrapper -->
-                <div class="swiper-wrapper">
-                  <!-- Slides -->
-                  <div class="swiper-slide"><img src="./assets/img/lugares/paco-alfandega.png" alt="pacoalfandega"></div>
-                  <div class="swiper-slide"><img src="./assets/img/lugares/cinema-saoluiz.png" alt="cinemasaoluiz"></div>
-                  <div class="swiper-slide">  <img src="./assets/img/lugares/paco-dofrevo.png" alt="pacodofrevo"></div>
-                  <div class="swiper-slide"><img src="./assets/img/lugares/parque-jaqueira.png" alt="parquedajaqueira"></div>
-                  <div class="swiper-slide"><img src="./assets/img/lugares/cais-doporto.png" alt="caisdoporto"></div>
-                  <div class="swiper-slide"> <img src="./assets/img/lugares/ricardo-brennand.png" alt="institutoricardobrennand"></div>
-                  <div class="swiper-slide"> <img src="./assets/img/lugares/praia-bv.png" alt="praiadeboaviagem"></div>
-                  ...
+            <section>
+                <div id="cCarousel">
+                  <div class="arrow" id="prev"><i class="fa-solid fa-chevron-left"></i></div>
+                  <div class="arrow" id="next"><i class="fa-solid fa-chevron-right"></i></div>
+              
+                  <div id="carousel-vp">
+                    <div id="cCarousel-inner">
+              
+                      <article class="cCarousel-item">
+                        <img src="/assets/img/lugares/cais-doporto.png" alt="Moon">
+                      </article>
+              
+                      <article class="cCarousel-item">
+                        <img src="/assets/img/lugares/ricardo-brennand.png"  alt="cais-doporto">
+                      </article>
+              
+                      <article class="cCarousel-item">
+                        <img src="/assets/img/lugares/cinema-saoluiz.png" alt="Moon">
+                      </article>
+              
+                      <article class="cCarousel-item">
+                        <img src="/assets/img/lugares/paco-alfandega.png" alt="Moon">
+                      </article>
+              
+                      <article class="cCarousel-item">
+                        <img src="/assets/img/lugares/paco-dofrevo.png" alt="Moon">
+                      </article>
+              
+                      <article class="cCarousel-item">
+                        <img src="/assets/img/lugares/teatro-santaisabel.png" alt="Moon">
+                      </article>
+                      <article class="cCarousel-item">
+                        <img src="/assets/img/lugares/paco-alfandega.png" alt="Moon">
+                      </article>
+                      <article class="cCarousel-item">
+                        <img src="/assets/img/lugares/parque-jaqueira.png" alt="Moon">
+                      </article>
+                    </div>
+                  </div>
                 </div>
-                <!-- If we need pagination -->
-                <div class="swiper-pagination"></div>
-                
-                <!-- If we need navigation buttons -->
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-button-next"></div>
-                
-                <!-- If we need scrollbar -->
-                <div class="swiper-scrollbar"></div>
-            </div>
+              </section>
             
             <!-- CARROSSEL ASSOMBRADO -->
             <div id="myCarousel" class="carousel slide container" data-bs-ride="carousel">
@@ -451,26 +469,7 @@
             <span class="visually-hidden">Next</span>
         </button>
     </div>
-            <!-- <div class="swiper-wrapper">
-                <div class="card-places">
-                    <div class="swiper-slide"><img src="assets\img\lugares\teatro-santaisabel.png" alt="teatrosantaisabel"></div>
-                    <div class="swiper-slide"><img src="assets\img\lugares\paco-alfandega.png" alt="pacoalfandega"></div>
-                    <div class="swiper-slide"><img src="assets\img\lugares\paco-dofrevo.png" alt="pacodofrevo"></div>
-                    <div class="swiper-slide"><img src="assets\img\lugares\cinema-saoluiz.png" alt="cinemasaoluiz"></div>
-                    <div class="swiper-slide"><img src="assets\img\lugares\parque-jaqueira.png" alt="parquedajaqueira"></div>
-                    <div class="swiper-slide"><img src="assets\img\lugares\cais-doporto.png" alt="caisdoporto"></div>
-                    <div class="swiper-slide"><img src="assets\img\lugares\ricardo-brennand.png" alt="institutoricardobrennand"></div>
-                    <div class="swiper-slide"><img src="assets\img\lugares\praia-bv.png" alt="praiadeboaviagem"></div>
-                </div>
-                ...
-                <div class="swiper-pagination"></div>
-                    
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-button-next"></div>
-                
-                    <div class="swiper-scrollbar"></div>
-                    </div>-->
-                    
+              
             
                     
                     <img class="busao-brt back" src="assets\img\stickers\busao-costa.png" alt="brtcosta"> 
@@ -948,5 +947,6 @@
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./js/carrosselCards.js"></script>
+    <script src="carrosselTeste.js"></script>
 </body>
 </html>
