@@ -2,7 +2,7 @@
 .header-culture{
     display: flex;
     flex-direction: row;
-    /* justify-content: space-between; */
+    justify-content: space-evenly;
     align-items: center; 
 }
 
@@ -56,6 +56,46 @@
     transform: scale(1.1);
 } 
 
+/*SECTION ARTISTAS */
+
+.section-artists{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+
+}
+.album-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.album {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 200px;
+    height: 200px;
+    padding: 8px 5px;
+    background-color: #e8a87c;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.album img {
+    width: 75%;
+    height: 75%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.vinyl {
+    width: 500px;
+}
 
 /* SECTION RITMOS */
 .container {
