@@ -30,9 +30,8 @@ body {
   align-items: center;
   border-radius: 50%;
   z-index: 1;
-  font-size: 26px;
   color: white;
-  background: #00000072;
+  background-color: #262525ae;
   cursor: pointer;
 }
 
@@ -76,8 +75,7 @@ body {
 
 .cCarousel-item {
   width: 250px;
-  height: 365px;
-  border: 2px solid white;
+  height: 400px;
   border-radius: 15px;
   overflow: hidden;
   display: flex;
