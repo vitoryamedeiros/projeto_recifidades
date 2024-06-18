@@ -67,3 +67,13 @@ section{
     width: 40px;
     height: 40px;
 }
+
+.title {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    font-size: 2em;
+    margin: 20px 0;
+    /* color: #333; */
+}

@@ -3,7 +3,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center; 
+    align-items: center;
     margin: 50px 100px;
     background-color: #0363AD;
     color: #fff;
@@ -39,12 +39,17 @@
     flex-direction: column;
     }
 
+    .h3-assinatura{
+        margin-top: 50px;
+        font-size: 2rem;
+    }
+
     .preco-relative{
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
-    margin: 100px;
+    /*margin: 100px;*/
     }
     .centavos{
     display: flex;
@@ -64,9 +69,17 @@
     rotate: -5deg;
     }
 
+    .span-pocasal{
+        margin-bottom: 50px;
+    }
+
     .ballon-rs{
     position: relative;
     width: 170px;
+
 }
 
 
+.reciclube--title{
+    font-size: 3.5rem;
+}

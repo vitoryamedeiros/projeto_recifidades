@@ -146,9 +146,4 @@
 .card-content a:hover {
     text-decoration: underline;
 }
-.title {
-    text-align: center;
-    font-size: 2em;
-    margin: 20px 0;
-    /* color: #333; */
-}
+
