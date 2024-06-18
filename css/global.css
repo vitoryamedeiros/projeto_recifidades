@@ -61,6 +61,7 @@ section{
     position: fixed;
     right: 30px;
     bottom: 30px;
+    z-index: 2;
 }
 
 .arrowTop img{
@@ -77,3 +78,4 @@ section{
     margin: 20px 0;
     /* color: #333; */
 }
+
