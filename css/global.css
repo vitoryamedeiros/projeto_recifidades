@@ -1,11 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Varela&display=swap');
+
+@font-face {
+    font-family: 'Thinman';
+    src: url(../assets/fonts/thinman/thinman.ttf);
+}
 
 *{
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
 }
 
-@font-face {
+h2{
     font-family: 'Thinman';
-    src: url(../assets/fonts/fidena/Fidena.ttf);
+    color: #fff;
+    letter-spacing: .5rem;
+    font-weight: 100;
+} 
+
+main{
+    background-color: #EA7209;
 }
 
+section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+}
+
+.head-sections,
+.section-subtitle{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 40px;
+    font-size: 2rem;
+    color: #fff;
+}
+
+.section-subtitle{
+    font-family: 'Roboto Condensed';
+}
+
+.head-sections.icon-brilho{
+    width: 40px;
+    height: 40px;
+    padding: 0px 10px;
+}
+
+.section-subtitle > img{
+    width: 50px;
+    position: relative;
+    top: -10px;
+    padding: 10px;
+}
+
+.arrowTop{
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+}
+
+.arrowTop img{
+    width: 40px;
+    height: 40px;
+}

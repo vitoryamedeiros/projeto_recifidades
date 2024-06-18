@@ -1,0 +1,44 @@
+
+.nav-bar{
+    /* display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; */
+    padding-top: 30px;
+}
+
+.nav-links{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.nav-links > img{
+    width: 25px;
+}
+.nav-links > li {
+    list-style: none;
+    padding: 0px 20px;
+}
+.nav-links > li > a {
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Thinman';
+    font-size: 1.2rem;
+    letter-spacing: .3rem;
+}
+
+.header-banner{
+    background-image: url(../assets/img/header-banner/ceu-bg.png);
+    font-family: "Roboto Condensed", sans-serif;
+    color: #fff;
+}
+
+.text-box{
+    font-size: 2rem;
+    padding: 100px;
+}
+
+.background > img{
+    width: 2000px;
+}

@@ -1,0 +1,10 @@
+
+.banner-finalizacao{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../assets/shapes/fundo-finalizacao.png);
+    height: 100%;
+    color: white;
+}
