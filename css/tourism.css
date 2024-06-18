@@ -2,6 +2,9 @@
 .section-tourism{
     margin: 50px;
     background-color: #0363AD;
+    border-radius: 10px;
+    height: 600px;
+    position: relative;
 }
 
 .header-tourism{
@@ -18,14 +21,13 @@
 
 .busao-brt.front{
     display: flex;
-    position: relative;
-    right: -865px;
+    position: absolute;
+    right: 0;
+    top: 10px;
 }
-
-.swiper-wrapper{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
+.busao-brt.back{
+   display: flex;
+   position: absolute;
+   bottom: 10px;
+   left: 0;
 }
