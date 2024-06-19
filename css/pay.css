@@ -1,0 +1,36 @@
+body{
+    display: flex;
+    flex-direction: column;
+    background-color: #0a5bb8;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    color: #fff;
+}
+
+h1{
+    font-family: 'Thinman';
+    letter-spacing: .5rem;
+    font-weight: 100;
+    font-size: 3rem;
+}
+
+span{
+    font-family: 'Roboto Condensed';
+}
+.ops{
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+}
+.tente-novamente{
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+}
+
+img{
+    margin: 30px 0 22px 0;
+}
+
+/* .button-54 .pay{
+    margin-top: 5px;
+} */

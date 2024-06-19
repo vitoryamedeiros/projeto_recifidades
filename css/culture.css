@@ -2,34 +2,14 @@
 .header-culture{
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center; 
 }
-
-/* artistas */
-.cards-artistas{
-        display: inline-grid;
-        grid-template-columns: auto auto auto;
-    }
-
-    .artista{
-        background-color: #fff;
-        border: 1px solid rgba(255, 255, 255, 0.8);
-        padding: 20px;
-        font-size: 30px;
-        text-align: center;
-    }
-
-    .foto-artista{
-        display: flex;
-        flex-direction: row;
-        position: relative;
-    }
-
-    .disco{
+.header-culture .header-culture-figures{
     display: flex;
-    flex-direction: row;
+    justify-content: space-between;
     position: relative;
+    width: 100px;
 }
 
 
@@ -68,7 +48,7 @@
 }
 .album-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: 20px;
 }
 
@@ -78,8 +58,8 @@
     justify-content: center;
     align-items: center;
     position: relative;
-    width: 200px;
-    height: 200px;
+    width: 220px;
+    height: 220px;
     padding: 8px 5px;
     background-color: #e8a87c;
     border-radius: 10px;
@@ -90,60 +70,88 @@
     width: 75%;
     height: 75%;
     object-fit: cover;
-    border-radius: 10px;
 }
 
 .vinyl {
-    width: 500px;
+    width: 500px;    
+
 }
+
+
+/* artistas 
+.cards-artistas{
+    display: inline-grid;
+    grid-template-columns: auto auto auto;
+}
+
+.artista{
+    background-color: #fff;
+    border: 1px solid rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+}
+
+.foto-artista{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+
+.disco{
+display: flex;
+flex-direction: row;
+position: relative;
+width: 200px;
+}*/
 
 /* SECTION RITMOS */
 .container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
-}
-.grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
-}
-.card {
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    transition: transform 0.2s;
-    padding: 3px;
-}
-.card:hover {
-    transform: translateY(-5px);
-}
-.card iframe {
-    width: 100%;
-    height: 200px;
-}
-.card-content {
-    padding: 15px;
-}
-.card-title {
-    font-size: 1.2em;
-    margin: 0 0 10px 0;
-    color: #333;
-}
-.card-text {
-    font-size: 0.9em;
-    color: #666;
-    line-height: 1.5;
-}
-.card-content a {
-    display: block;
-    margin-top: 10px;
-    text-decoration: none;
-    color: #1e90ff;
-    font-weight: bold;
-}
-.card-content a:hover {
-    text-decoration: underline;
+    }
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 20px;
+    }
+    .card {
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        transition: transform 0.2s;
+        padding: 3px;
+    }
+    .card:hover {
+        transform: translateY(-5px);
+    }
+    .card iframe {
+        width: 100%;
+        height: 200px;
+    }
+    .card-content {
+        padding: 15px;
+    }
+    .card-title {
+        font-size: 1.2em;
+        margin: 0 0 10px 0;
+        color: #333;
+    }
+    .card-text {
+        font-size: 0.9em;
+        color: #666;
+        line-height: 1.5;
+    }
+    .card-content a {
+        display: block;
+        margin-top: 10px;
+        text-decoration: none;
+        color: #1e90ff;
+        font-weight: bold;
+    }
+    .card-content a:hover {
+        text-decoration: underline;
 }
 

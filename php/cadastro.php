@@ -902,8 +902,7 @@ mysqli_close($con);
                         </label>
                       </div>
 
-                    <button type="submit" class="button-54" role="button">Ir para o pagamento!</button>
-
+                      <a href="pages/pagamento.html"><button class="button-54 form" role="button">Ir para o pagamento!</button></a>
                 </form>
             </section>
         </section>

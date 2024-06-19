@@ -4,8 +4,15 @@
   flex-direction: column;
   justify-content: center;
   align-items: center; 
+  border: 1px solid #fff;
+  box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px;
+  background-color: #e3006ed5;
+  margin-bottom: 40px;
 }
 
+.section-formulario .title{
+  margin-top: 50px;
+}
 .section-formulario .title img{
   width: 65px;
   position: relative;
@@ -18,11 +25,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center; 
-    border: 1px solid #fff;
-    box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px;
-    background-color: #e3006ed5;
     width: 700px;
-    margin: 20px 0px 50px 0px;
     padding: 20px;
 }
 
@@ -40,7 +43,6 @@
     box-shadow: #fff 1px;
 }
 
-/* CSS */
 .button-54 {
   font-family: "Open Sans", sans-serif;
   font-size: 16px;
@@ -74,6 +76,10 @@
 .button-54 a:hover{
   text-decoration: none;
   color: #fff;
+}
+
+.button-54.form{
+  margin: 30px;
 }
 
 @media (min-width: 768px) {

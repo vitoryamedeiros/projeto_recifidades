@@ -13,14 +13,13 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    text-align: start;    
+    text-align: center;    
     padding: 50px 50px 30px;
     width: 50vw;
     height: 380px;
     color: #fff;
     font-family: "Roboto Condensed", sans-serif;
-    font-size: 1.8rem;
-    background-color: #e16900;
+    background-color: #fefefe37;
     -webkit-box-shadow: 8px 9px 5px 0px rgba(0,0,0,0.12);
     -moz-box-shadow: 8px 9px 5px 0px rgba(0,0,0,0.12);
     box-shadow: 8px 9px 5px 0px rgba(0,0,0,0.12);
@@ -28,10 +27,30 @@
     position: relative;
     top: 350px;
 }
-.box-content p{
-    font-size: 1.4rem;
-    font-weight: 400;
+
+.box-content h3{
+    margin-top: 50px;
+    font-size: 2rem;
+    font-family: 'Thinman';
+    letter-spacing: 5px;
 }
+.box-content p{
+    margin: 10px 0;
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+.box-content strong{
+    font-size: 1.4rem;
+    color: #e3006ec0;
+    font-weight: 700;
+}
+
+.box-content p >.call-action{
+    font-size: 1.6rem;
+    position: relative;
+    top: -40px;
+}
+
 .boyzinhos{
     display: flex;
     flex-direction: row;
