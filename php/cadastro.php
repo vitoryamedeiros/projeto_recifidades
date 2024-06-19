@@ -509,56 +509,56 @@ mysqli_close($con);
 
                 <img src="../assets/img/stickers/caboclo-delanca.png" alt="Png Caboclo de Lança"> 
             </header>
-
+            
             <!-- secao de artistas -->
             <section class="section-artists">
                 <!-- subtitulo da secao -->
                 <div class="section-subtitle">
-                    <img src="../assets/icons/brilhinho.png" alt="Icone de Brilho">
+                    <img src="./assets/icons/brilhinho.png" alt="Icone de Brilho">
                     <h5>Artistas Locais</h5>
-                    <img src="../assets/icons/brilhinho.png" alt="Icone de Brilho">
+                    <img src="./assets/icons/brilhinho.png" alt="Icone de Brilho">
                 </div>
+
                 <!-- card dos artistas -->
-                <div class="cards-artistas">
-                    <div class="artista lenine">
-                        <img class="foto-artista" src="../assets/img/artistas/lenine.png" alt="capaLenine">
-                        <img class="disco" src="../assets/img/artistas/vinil.png" alt="vinil">
+                <div class="album-grid">
+                    <div class="album">
+                        <img src="assets/img/artistas/lenine.png" alt="Lenine">
+                        <div class="vinyl"><img src="assets/img/artistas/vinil-metade.png" alt=""></div>
                     </div>
-                    <div class="artista reginaldo-rose">
-                        <img class="foto-artista" src="../assets/img/artistas/reginaldo-rossi.png" alt="capaRossi">
-                        <img class="disco" src="../assets/img/artistas/vinil.png" alt="vinil">
+                    <div class="album">
+                        <img src="assets/img/artistas/reginaldo-rossi.png" alt="Reginaldo Rossi">
+                        <div class="vinyl"><img src="assets/img/artistas/vinil-metade.png" alt=""></div>
                     </div>
-                    <div class="artista alceu-valenca">
-                        <img class="foto-artista" src="../assets/img/artistas/alceu-valenca.png" alt="capaAlceu">
-                        <img class="disco" src="../assets/img/artistas/vinil.png" alt="vinil">
+                    <div class="album">
+                        <img src="assets/img/artistas/alceu-valenca.png" alt="Alceu Valença">
+                        <div class="vinyl"><img src="assets/img/artistas/vinil-metade.png" alt=""></div>
                     </div>
-                    <div class="artista luiz-gonzaga">
-                        <img class="foto-artista" src="../assets/img/artistas/luiz-gonzaga.png" alt="capaGonzaga">
-                        <img class="disco" src="../assets/img/artistas/vinil.png" alt="vinil">
+                    <div class="album">
+                        <img src="assets/img/artistas/luiz-gonzaga.png" alt="Luiz Gonzaga">
+                        <div class="vinyl"><img src="assets/img/artistas/vinil-metade.png" alt=""></div>
                     </div>
-                    <div class="artista chico-science">
-                        <img class="foto-artista" src="../assets/img/artistas/chico-science.png" alt="capaChico">
-                        <img class="disco" src="../assets/img/artistas/vinil.png" alt="vinil">
+                    <div class="album">
+                        <img src="assets/img/artistas/chico-science.png" alt="Chico Science">
+                        <div class="vinyl"><img src="assets/img/artistas/vinil-metade.png" alt=""></div>
                     </div>
-                    <div class="artista rafaela-santos">
-                        <img class="foto-artista" src="../assets/img/artistas/rafaela-santos.png" alt="capaRafaela">
-                        <img class="disco" src="../assets/img/artistas/vinil.png" alt="vinil">
+                    <div class="album">
+                        <img src="assets/img/artistas/rafaela-santos.png" alt="Rafaela Santos">
+                        <div class="vinyl"><img src="assets/img/artistas/vinil-metade.png" alt=""></div>
                     </div>
-                    <div class="artista joao-gomes">
-                        <img class="foto-artista" src="../assets/img/artistas/joao-gomes.png" alt="capaJoaoGomes">
-                        <img class="disco" src="../assets/img/artistas/vinil.png" alt="vinil">
+                    <div class="album">
+                        <img src="assets/img/artistas/joao-gomes.png" alt="João Gomes">
+                        <div class="vinyl"><img src="assets/img/artistas/vinil-metade.png" alt=""></div>
                     </div>
-                    <div class="artista priscila-senna">
-                        <img class="foto-artista" src="../assets/img/artistas/priscila-senna.png" alt="capaSenna">
-                        <img class="disco" src="../assets/img/artistas/vinil.png" alt="vinil">
+                    <div class="album">
+                        <img src="assets/img/artistas/priscila-senna.png" alt="Priscila Senna">
+                        <div class="vinyl"><img src="assets/img/artistas/vinil-metade.png" alt=""></div>
                     </div>
-                    <div class="artista conde-so-brega">
-                        <img class="foto-artista" src="../assets/img/artistas/conde-sobrega.png" alt="capaConde">
-                        <img class="disco" src="../assets/img/artistas/vinil.png" alt="vinil">
+                    <div class="album">
+                        <img src="assets/img/artistas/conde-sobrega.png" alt="Conde So Brega">
+                        <div class="vinyl"><img src="assets/img/artistas/vinil-metade.png" alt=""></div>
                     </div>
                 </div>
             </section>
-
 
             <!-- secao dos ritmos -->
             <section class="section-ritmos">
