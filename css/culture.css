@@ -50,6 +50,7 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 20px;
+    
 }
 
 .album {
@@ -58,52 +59,55 @@
     justify-content: center;
     align-items: center;
     position: relative;
-    width: 220px;
-    height: 220px;
-    padding: 8px 5px;
-    background-color: #e8a87c;
+    width: 210px;
+    height: 180px;
     border-radius: 10px;
     overflow: hidden;
+
+    padding: 10px;
+    background-color: #fefefe46;
+    -webkit-box-shadow: 8px 9px 5px 0px rgba(0,0,0,0.12);
+    -moz-box-shadow: 8px 9px 5px 0px rgba(0,0,0,0.12);
+    box-shadow: 8px 9px 5px 0px rgba(0,0,0,0.12);
+    border-radius: 10px;
+}
+.album:hover {
+    box-shadow: 1px -1px 23px 0px rgba(255,255,255,0.84);
+    -webkit-box-shadow: 1px -1px 23px 0px rgba(151, 151, 151, 0.575);
+    -moz-box-shadow: 1px -1px 23px 0px rgba(255,255,255,0.84);
+    border-radius: 8px 8px 8px 8px;
+    -webkit-border-radius: 8px 8px 8px 8px;
+    -moz-border-radius: 8px 8px 8px 8px;
 }
 
 .album img {
-    width: 75%;
-    height: 75%;
+    width: 85%;
+    height: 85%;
     object-fit: cover;
 }
 
-.vinyl {
-    width: 500px;    
-
-}
-
-
-/* artistas 
-.cards-artistas{
-    display: inline-grid;
-    grid-template-columns: auto auto auto;
-}
-
-.artista{
-    background-color: #fff;
-    border: 1px solid rgba(255, 255, 255, 0.8);
-    padding: 20px;
-    font-size: 30px;
-    text-align: center;
-}
-
-.foto-artista{
-    display: flex;
-    flex-direction: row;
+.artist-img{
     position: relative;
+    z-index: 1;
 }
 
-.disco{
-display: flex;
-flex-direction: row;
-position: relative;
-width: 200px;
-}*/
+.vinyl{
+    width: 500px;    
+    height: 150px;
+    animation: moveToRight 2s ease-in-out;
+    animation-delay: 500ms;
+    position: static;
+    z-index: 0;
+}
+
+@keyframes moveToRight {
+    0% {
+      transform: translateX(-100px);
+    }
+    100% {
+      transform: translateX(0px);
+    }
+}
 
 /* SECTION RITMOS */
 .container {
@@ -126,6 +130,8 @@ width: 200px;
     }
     .card:hover {
         transform: translateY(-5px);
+        border: 1px solid #fff;
+        box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px;
     }
     .card iframe {
         width: 100%;

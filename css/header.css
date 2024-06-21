@@ -28,6 +28,11 @@
     letter-spacing: .3rem;
 }
 
+.nav-links > li > a:hover {
+    border-bottom: 2px solid #ffffff53;
+    padding-bottom: 7px;
+}
+
 .header-banner{
     background-image: url(../assets/img/header-banner/ceu-bg-1.png);
     font-family: "Roboto Condensed", sans-serif;

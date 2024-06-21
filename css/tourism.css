@@ -5,6 +5,8 @@
     border-radius: 10px;
     height: 600px;
     position: relative;
+    z-index: 1;
+
 }
 
 .header-tourism{
@@ -23,9 +25,24 @@
 .busao-brt.front{
     display: flex;
     position: absolute;
-    right: 0;
+    right: 0px;
     top: 10px;
 }
+.busao-brt.front:hover{
+    animation: moveToLeft 2s ease-in-out;
+    animation-delay: 500ms;
+    z-index: 0;
+}
+
+@keyframes moveToLeft {
+    0% {
+      transform: translateX(200px);
+    }
+    100% {
+      transform: translateX(100px);
+    }
+}
+
 .busao-brt.back{
    display: flex;
    position: absolute;

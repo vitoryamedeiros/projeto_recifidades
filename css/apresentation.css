@@ -62,6 +62,11 @@
 .boyzinhos img{
     width: 400px;
 }
+.boyzinhos img:hover{
+    transform: translateY(-15px);
+
+}
 .pista-unica{
     width: 100vw;
 }
+

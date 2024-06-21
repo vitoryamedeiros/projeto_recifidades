@@ -35,6 +35,9 @@ body {
   background-color: #262525ae;
   cursor: pointer;
 }
+#cCarousel .arrow:hover{
+  background-color: #7b7b7b94;
+}
 
 #cCarousel #prev {
   left: 0px;
@@ -89,4 +92,6 @@ body {
   min-height: 246px;
   color: white;
 }
-
+.cCarousel-item img:hover {
+  transform: translateY(-5px);
+}
