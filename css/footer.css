@@ -4,7 +4,7 @@ footer{
     flex-direction: column;
     justify-content: center;
     align-items: center; 
-    background-color: #99004A;
+    background-color: #b40057;
     color: #fff;
     padding-bottom: 50px;
 }
@@ -14,13 +14,36 @@ header .footer{
     flex-direction: column;
     justify-content: center;
     align-items: center; 
-    font-size: 2rem;
+    font-size: 1.3rem;
 }
 
 .footer.title{
     padding-top: 30px;
     font-family: "Roboto Condensed", sans-serif;
+    letter-spacing: .1rem;
+    font-weight: 300;
+    margin: 0;
 }
+.footer.subtitulo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.footer.span{
+    font-family: 'Thinman';
+    font-size: 2.6rem;
+    letter-spacing: .65rem;
+    font-weight: 100;
+    margin: 55px 0 0;
+}
+.footer > p{
+    letter-spacing: .1rem;
+    font-weight: 100;    
+    font-size: 1.25rem;
+}
+
 
 .center-content{
     display: flex;
@@ -32,6 +55,7 @@ header .footer{
 .laursa-footer{
     display: flex;
     width: 300px; 
+    margin-bottom: 20px;
 }
 
 hr{
@@ -56,25 +80,31 @@ hr{
         flex-direction: column;
         justify-content: center;
         align-items: center; 
-        margin: 0 20px;
-        font-size: .8rem;
+        margin: 0 15px;
     }
 
+    .name > h4{
+        font-size: 1rem;
+        color:#ffffff;
+    }
+    
     .icons-footer{
-    display: flex;
-    flex-direction: row;        
-    margin: 5px;
+        display: flex;
+        flex-direction: row;        
+        margin: 5px;
     }
 
     .icons-footer img{
     padding: 3px;
+    width: 35px;
 }
 
 
 .span-footer{
-    color: #D57CA8;
+    color: #e59abee3;
     font-weight: 600;
     padding: 15px 0px;
+    font-size: 1.1rem;
 }
 
 .direitos{

@@ -10,10 +10,20 @@
     justify-content: space-between;
     position: relative;
     width: 100px;
+    -webkit-filter: drop-shadow(0 3px 15px rgba(255, 255, 255, 0.3));
+    -moz-filter: drop-shadow(0 3px 15px rgba(255, 255, 255, 0.3));
+    -ms-filter: drop-shadow(0 3px 15px rgba(255, 255, 255, 0.3));
+    -o-filter: drop-shadow(0 3px 15px rgba(255, 255, 255, 0.3));
+    filter: drop-shadow(0 3px 15px rgba(255, 255, 255, 0.3));
 }
 
 
 /* culinaria */
+.section-culinaria{
+    position: relative;
+    top: -100px;
+}
+
 .gallery{
     width: 100%;
     max-width: 2000px;
@@ -44,7 +54,8 @@
     align-items: center;
     height: 100vh;
     text-align: center;
-
+    position: relative;
+    top: -150px;
 }
 .album-grid {
     display: grid;
@@ -110,10 +121,16 @@
 }
 
 /* SECTION RITMOS */
+
+.section-ritmos{
+    position: relative;
+    top: -160px;
+}
 .container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
+
     }
     .grid {
         display: grid;

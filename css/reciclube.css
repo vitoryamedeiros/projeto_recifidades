@@ -9,6 +9,13 @@
     color: #fff;
 }
 
+.reciclube.fundo{
+    border: 1px solid white;
+    box-shadow: 1px -1px 23px 0px rgba(255,255,255,0.84);
+    -webkit-box-shadow: 1px -1px 23px 0px rgba(255, 255, 255, 0.884);
+    -moz-box-shadow: 1px -1px 23px 0px rgba(255,255,255,0.84);
+}
+
 .header.reciclube{
     display: flex;
     flex-direction: row;

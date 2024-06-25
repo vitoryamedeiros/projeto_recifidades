@@ -35,6 +35,7 @@
 
 .header-banner{
     background-image: url(../assets/img/header-banner/ceu-bg-1.png);
+    width: 100%;
     font-family: "Roboto Condensed", sans-serif;
     font-weight: 100;
     color: #fff;
@@ -46,15 +47,35 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    text-align: center;
-    font-size: 2rem;
     padding: 100px;
+    position: relative;
+    top: -50px;
+}
+.text-box h1{    
+    font-size: 1rem;
     font-weight: 100;
+    font-family: 'Thinman';    
+    letter-spacing: .95rem;
+}
+.text-box span{
+    font-size: 5rem;
+    letter-spacing: .65rem;
+    font-weight: 200;
+    font-family: 'Roboto Condensed';
+}
+.text-box hr{
+    height: 2px;
+    width: 80vw;
+    margin: 0;
+}
+.text-box p{
+    font-weight: 400;
+    color: #ffffffa5;
 }
 
 .background img{
-    width: 100vw;
+    width: 100%;
     height: 230px;
     position: relative;
-    top: -80px;
+    top: -130px;
 }

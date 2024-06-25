@@ -4,7 +4,17 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-image: url(../assets/shapes/fundo-finalizacao.png);
-    height: 100%;
-    color: white;
+    /* background-image: url(../assets/shapes/fundo-finalizacao.png); */
+    height: 130px;
+    width: 100%;
+    margin-top: 30px;
+    color: #ffffff;
+    font-size: 1.2rem;
+    box-shadow: 1px -1px 10px 0px rgba(255,255,255,0.84);
+    -webkit-box-shadow: 1px -1px 10px 0px rgba(255, 255, 255, 0.407);
+    -moz-box-shadow: 1px -1px 10px 0px rgba(255,255,255,0.84);
+}
+
+.banner-finalizacao > h6{
+    font-size: 1.6rem;
 }
