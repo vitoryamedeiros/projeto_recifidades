@@ -29,8 +29,15 @@
     flex-direction: row;
 }
 .title.reciclube > img{
-    width: 50px;
-    padding: 0px 40px;
+    width: 60px;
+    position: relative;
+    top: -1px;
+    right: 8px;
+    padding: 5px;
+}
+
+.stickers:hover{
+    transform: translateY(-10px);
 }
 
 .text-description{
@@ -78,6 +85,8 @@
 
     .span-pocasal{
         margin-bottom: 50px;
+        position: relative;
+        top: -60px;
     }
 
     .ballon-rs{

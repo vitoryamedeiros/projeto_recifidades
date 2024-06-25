@@ -7,7 +7,7 @@
     /* background-image: url(../assets/shapes/fundo-finalizacao.png); */
     height: 130px;
     width: 100%;
-    margin-top: 30px;
+    margin:0 0 100px;
     color: #ffffff;
     font-size: 1.2rem;
     box-shadow: 1px -1px 10px 0px rgba(255,255,255,0.84);

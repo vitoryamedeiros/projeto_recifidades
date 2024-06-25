@@ -6,6 +6,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center; 
+    margin-bottom: 25px;
 }
 
 .header-beneficios{
@@ -13,6 +14,7 @@
     flex-direction: row;
     justify-content: center;
     align-items: center; 
+    margin-bottom: 25px;
 }
 
 .title.beneficios{
@@ -21,9 +23,11 @@
     font-size: 2rem;
 }
 .title.beneficios > img{
-    width: 50px;
-    height: 50px;
-    padding: 0px 10px;
+    width: 60px;
+    position: relative;
+    top: -10px;
+    right: 8px;
+    padding: 10px;
 }
 
 #featuresSection {

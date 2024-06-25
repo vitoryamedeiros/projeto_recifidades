@@ -55,7 +55,7 @@
     height: 100vh;
     text-align: center;
     position: relative;
-    top: -150px;
+    top: -100px;
 }
 .album-grid {
     display: grid;
@@ -124,7 +124,7 @@
 
 .section-ritmos{
     position: relative;
-    top: -160px;
+    top: -120px;
 }
 .container {
     max-width: 1200px;
