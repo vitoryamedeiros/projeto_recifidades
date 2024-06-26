@@ -35,6 +35,7 @@
 
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/carrossel.css">
+    <link rel="stylesheet" href="css/scroll.css">
     
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"></script>
@@ -82,12 +83,12 @@
                 <div class="text-box">
                     <div class="title">
                         <h1>
-                            CONHECA 
+                            <span class="conheca">CONHEÇA</span>
                             <br> 
                             <span>A MAIOR CIDADE EM LINHA RETA</span> 
                             <hr>
                             <br> 
-                            DO MUNDO
+                            <span class="mundo">DO MUNDO</span>
                         </h1> 
                     </div>
                     <p>Fonte Oficial: Meu prefeito</p>
@@ -119,6 +120,7 @@
                 <p>
                     <strong class="call-action">Perde tempo não, tabacudo!</strong>     
                 </p>
+                <a class="scroll" href="#"></a>
             </div>
 
             <div class="figure-apresentation">
@@ -133,9 +135,37 @@
 
         <!-- ARROW TOP BUTTON -->
         <div class="arrowTop">
-            <a href="#">
+            <!-- <a href="#">
                 <img src="./assets/icons/setaTopo.png" alt="seta-topo">
             </a>
+            <a href="index.html">
+                <span class="arrowbtn arrowbtn-up"></span>
+            </a>-->
+
+            <div class="demo">
+
+                <!-- <a href="" class="arrow left">
+                    <i></i>
+                    <svg>
+                        <use xlink:href="#circle">
+                    </svg>
+                </a> -->
+            
+                <a href="index.html" class="arrow">
+                    <i></i>
+                    <svg>
+                        <use xlink:href="#circle">
+                    </svg>
+                </a>
+            
+            </div>
+            
+            <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+                <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" width="44px" height="44px" id="circle" fill="none" stroke="currentColor">
+                    <circle r="20" cy="22" cx="22" id="test">
+                </symbol>
+            </svg>
+
         </div>
 
         <!-- SECTION HISTORIA -->
@@ -160,39 +190,69 @@
             <section class="timeline">
 
                 <div class="timeline">
-                    <img src="/assets/img/stickers/escultura-brennand.png" alt="Timeline">
-                    <div class="event" style="top: 5%; left: 6%;">
-                        <img src="path_to_image1.png" alt="Evento 1535">
-                        <p>1535</p>
-                        <p>Duarte Coelho foi um navegador e militar português, que iniciou a colonização em 1535 e fez de Pernambuco a capitania mais rica do país.</p>
+                    <img src="/assets/img/stickers/escultura-brennand.png" alt="Timeline" >
+                    <div class="event" style="top: 4%; left: 3%;">
+                        <p class="text-content">Duarte Coelho foi um navegador e militar português, que iniciou a colonização em 1535 e fez de Pernambuco a capitania mais rica do país, e tambem fundou de Olinda.</p>
+                        
+                        <div class="date" style="top: 1%; left: 5%;">
+                            <div class="dates">
+                                <h2>15</h2>
+                                <h2>35</h2>
+                            </div>
+                        </div>     
                     </div>
-                    <div class="event" style="top: 10%; left: 62%;">
-                        <img src="path_to_image2.png" alt="Evento 1817">
-                        <p>1817</p> 
+                    
+                    <div class="event" style="top: 15%; left: 58%;">
+                        <div class="date" style="top: 5%; left: -1%;">
+                            <div class="dates">
+                                <h2>18</h2>
+                                <h2>17</h2>
+                            </div>
+                        </div>                       
                         <p class="data-description">Em 6 de março eclodiu no Recife a chamada Revolução Pernambucana. Dentre as suas causas, destacam-se a influência das ideias iluministas propagadas pelas sociedades maçônicas</p>
                     </div>
-                    <div class="event" style="top: 29%; left: 10%;">
-                        <img src="path_to_image3.png" alt="Evento 1910">
-                        <p>1910</p>
+
+                    <div class="event" style="top: 29%; left: 8%;">
                         <p class="timeline__blurb">Nessa epoca, a cidade pretendia tornar-se moderna, tal como Paris, através da reforma do porto e construção de largas avenidas, sem preocupação com a preservação dos edifícios históricos.</p>
+
+                        <div class="date" style="top: 29%; left: 5%;">
+                            <div class="dates">
+                                <h2>19</h2>
+                                <h2>10</h2>
+                            </div>
+                        </div>                             
                     </div>
-                    <div class="event" style="top: 35%; left: 60%;">
-                        <img src="path_to_image4.png" alt="Evento 1991">
-                        <p>1991</p>
+
+                    <div class="event" style="top: 44%; left: 56%;">
+                        <div class="date">
+                            <div class="dates" style="top: 35%; left: 60%;">
+                                <h2>19</h2>
+                                <h2>91</h2>
+                            </div>
+                        </div>                              
                         <p>A década de 90 foi de grande importância para a cultura pernambucana. Foi marcada pelo furacão do movimento Mangue Beat, liderado por Chico Science e a Nação Zumbi.</p>
                     </div>
-                    <div class="event" style="top: 55%; left: 8%;">
-                        <img src="path_to_image3.png" alt="Evento 2000">
-                        <p>2000</p>
+
+                    <div class="event" style="top: 60%; left: 5%;">
                         <p class="timeline__blurb">Criado no ano 2000, o Porto Digital surgiu com o objetivo de ser uma política pública para o desenvolvimento do setor de tecnologia da informação em Pernambuco.</p>
+                        <div class="date" style="top: 55%; left: 4%;">
+                            <div class="dates" >
+                                <h2>20</h2>
+                                <h2>00</h2>
+                            </div>
+                        </div>                        
                     </div>
-                    <div class="event" style="top: 60%; left: 62%;">
-                        <img src="" alt="Evento 2020">
-                        <p>2020</p>
-                        <p>Meu prefeito! Amado por todos e futuro presidente da republica, Joao Campos assumiu a prefeitura em 2021 e tá lá tentando resolver os perrengues da cidade. Ele é novo, mas não é besta não, visse? Desenrolado é ele, e tá sempre buscando soluções inovadoras pra deixar a cidade mais bonita ainda.</p>
+
+                    <div class="event" style="top: 68%; left: 57%;">
+                        <div class="date">
+                            <div class="dates" style="top: 60%; left: 62%;">
+                                <h2>20</h2>
+                                <h2>20</h2>
+                            </div>
+                        </div>                          
+                        <p>Meu prefeito! Amado por todos e futuro presidente da republica, Joao Campos assumiu a prefeitura em 2021 e tá lá ate hoje. Ele é novo, mas não é besta não, visse? Pense num bixo desenrrolado!</p>
                     </div>
                 </div>
-
             </section>
         </section>
 
@@ -264,8 +324,8 @@
             </header>
             <section>
                 <div id="cCarousel">
-                  <div class="arrow" id="prev">❮</div>
-                  <div class="arrow" id="next">❯</div>
+                  <div class="arrow-caroseul" id="prev">❮</div>
+                  <div class="arrow-caroseul" id="next">❯</div>
               
                   <div id="carousel-vp">
                     <div id="cCarousel-inner">
@@ -313,7 +373,7 @@
             <!-- header da secao -->
             <header class="header-culture">
 
-                <img class="header-culture-figures" src="./assets/img/stickers/la-ursa.png" alt="Png La Ursa"> 
+                <img class="stickers header-culture-figures " src="./assets/img/stickers/la-ursa.png" alt="Png La Ursa"> 
 
                 <div class="head-sections head-culture">
                     <img class="icon-brilho brilhinho" src="./assets/icons/brilhinho.png" alt="Icone de Brilho"> 
@@ -323,7 +383,7 @@
                     <img class="icon-brilho brilhinho" src="./assets/icons/brilhinho.png" alt="Icone de Brilho"> 
                 </div>
 
-                <img class="header-culture-figures" src="./assets/img/stickers/caboclo-delanca.png" alt="Png Caboclo de Lança"> 
+                <img class="stickers header-culture-figures" src="./assets/img/stickers/caboclo-delanca.png" alt="Png Caboclo de Lança"> 
             </header>
 
             <!-- secao de artistas -->
@@ -789,68 +849,68 @@
 
                 <div class="creattors">
                     <div class="name vitorya">
-                        <h4>Vitórya Medeiros</h4>
+                        <h4><a class="link-creattor" href="https://www.linkedin.com/in/vitoryamedeiros/" target="_blank">Vitórya Medeiros</a></h4>
 
-                        <div class="icons-footer">
+                        <!-- <div class="icons-footer">
                             <a href="https://github.com/vitoryamedeiros" target="_blank">
                                 <img src="assets/icons/github.png" alt="Github Logo">
                             </a>
                             <a href="https://www.linkedin.com/in/vitoryamedeiros/" target="_blank">
                                 <img src="assets/icons/linkedin.png" alt="Linkedin Logo">
-                        </div>
+                        </div> -->
                         </a>
                     </div>
 
                     <div class="name guilherme">
-                        <h4>José Guilherme</h4>
+                        <h4><a class="link-creattor" href="https://www.linkedin.com/in/guilherme-felix-7195b32ba/" target="_blank">José Guilherme</a></h4>
 
-                        <div class="icons-footer">
+                        <!-- <div class="icons-footer">
                             <a href="https://github.com/guixjs" target="_blank">
                                 <img src="assets/icons/github.png" alt="Github Logo">
                             </a>
                             <a href="https://www.linkedin.com/in/guilherme-felix-7195b32ba/" target="_blank">
                                 <img src="assets/icons/linkedin.png" alt="Linkedin Logo">
                             </a>
-                        </div>
+                        </div> -->
                     </div> 
 
                     <div class="name izaa">
-                        <h4>Izaadora Laís</h4>
+                        <h4><a class="link-creattor" href="https://www.linkedin.com/in/izaadora-laís-cunha-neves-7206742a8/" target="_blank">Izaadora Laís</a></h4>
 
-                        <div class="icons-footer">
+                        <!-- <div class="icons-footer">
                             <a href="" target="_blank">
                                 <img src="assets/icons/github.png" alt="Github Logo">
                             </a>
                             <a href="https://www.linkedin.com/in/izaadora-laís-cunha-neves-7206742a8/" target="_blank">
                                 <img src="assets/icons/linkedin.png" alt="Linkedin Logo">
                             </a>
-                        </div>
+                        </div> -->
                     </div>
 
                     <div class="name miguel">
-                        <h4>Miguel Eudio</h4>
+                        <h4><a class="link-creattor" href="https://www.linkedin.com/in/miguel-batista-76344022b/" target="_blank">Miguel Eudio</a></h4>
 
-                        <div class="icons-footer">
+                        <!-- <div class="icons-footer">
                             <a href="https://github.com/MiguelEudio" target="_blank">
                                 <img src="assets/icons/github.png" alt="Github Logo">
                             </a>
                             <a href="https://www.linkedin.com/in/miguel-batista-76344022b/" target="_blank">
                                 <img src="assets/icons/linkedin.png" alt="Linkedin Logo">
                             </a>
-                        </div>
+                        </div> -->
                     </div>         
 
                     <div class="name anabea">
-                        <h4>Ana Beatriz</h4>
+                        <h4><a class="link-creattor" href="https://www.linkedin.com/in/ana-beatriz-silva-souza-80bbb2301/" target="_blank">Ana Beatriz</a></h4>
 
-                        <div class="icons-footer">
+                        <!-- <div class="icons-footer">
                             <a href="https://github.com/anabeatrizssouza" target="_blank">
                                 <img src="assets/icons/github.png" alt="Github Logo">
                             </a>
                             <a href="https://www.linkedin.com/in/ana-beatriz-silva-souza-80bbb2301/" target="_blank">
                                 <img src="assets/icons/linkedin.png" alt="Linkedin Logo">
                             </a>
-                        </div>
+                        </div> -->
                     </div>    
                 </div>             
             </div> 
@@ -866,5 +926,6 @@
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script>
 
     <script src="js/carrossel.js"></script>
+    <script src="js/button.js"></script>
 </body>
 </html>

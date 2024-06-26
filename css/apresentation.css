@@ -4,7 +4,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-top: 0px;
+    padding-top: 50px;
     position: relative;
     top: -90px;
 }
@@ -30,9 +30,9 @@
 
 .box-content h3{
     margin-top: 50px;
-    font-size: 2rem;
+    font-size: 2.5rem;
     font-family: 'Thinman';
-    letter-spacing: 5px;
+    letter-spacing: 1rem;
 }
 .box-content p{
     margin: 10px 0;
@@ -40,7 +40,7 @@
     font-weight: 500;
 }
 .box-content strong{
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     color: #e3006ec0;
     font-weight: 700;
 }

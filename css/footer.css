@@ -6,7 +6,7 @@ footer{
     align-items: center; 
     background-color: #b40057;
     color: #fff;
-    padding-bottom: 50px;
+    padding-bottom: 20px;
 }
 
 header .footer{
@@ -60,7 +60,6 @@ header .footer{
 
 hr{
     width: 70vw;
-    margin-top: 10px;
 }
 
 .section-creattors{
@@ -71,24 +70,32 @@ hr{
     }
 
     .creattors{
-        display: flex;
-        flex-direction: row;
+    display: flex;
+    flex-direction: row;
     }
 
     .name{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center; 
-        margin: 0 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    margin: 0 15px;
     }
 
     .name > h4{
-        font-size: 1rem;
-        color:#ffffff;
+    font-size: 1rem;
+    color:#ffffff;
     }
     
-    .icons-footer{
+    .link-creattor{
+    text-decoration: none;        
+    color:#ffffff;
+    }
+    .link-creattor:hover{
+    text-decoration: none;        
+    color:#f9c6dfe3;
+}
+    /* .icons-footer{
         display: flex;
         flex-direction: row;        
         margin: 5px;
@@ -97,14 +104,14 @@ hr{
     .icons-footer img{
     padding: 3px;
     width: 35px;
-}
+} */
 
 
 .span-footer{
     color: #e59abee3;
     font-weight: 600;
     padding: 15px 0px;
-    font-size: 1.1rem;
+    font-size: 1rem;
 }
 
 .direitos{
@@ -113,6 +120,8 @@ hr{
     justify-content: center;
     padding: 5px;
     color: #fff;
-    background-color: #0363AD;
+    background-color: #77003a;
     font-family: "Roboto Condensed";
+    font-size: .8rem;
+    letter-spacing: .2rem;
 }

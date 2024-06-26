@@ -6,6 +6,36 @@
     src: url(../assets/fonts/thinman/thinman.ttf);
 }
 
+
+body {
+    --sb-track-color: #545454;
+    --sb-thumb-color: #ffffff;
+    --sb-size: 10px;
+  }
+  
+  body::-webkit-scrollbar {
+    width: var(--sb-size)
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: var(--sb-track-color);
+    border-radius: 5px;
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background: var(--sb-thumb-color);
+    border-radius: 5px;
+    
+  }
+  
+  @supports not selector(::-webkit-scrollbar) {
+    body {
+      scrollbar-color: var(--sb-thumb-color)
+                       var(--sb-track-color);
+    }
+}
+
+
 *{
     margin: 0;
     padding: 0;

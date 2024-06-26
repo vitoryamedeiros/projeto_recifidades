@@ -20,7 +20,7 @@ body {
   margin: auto;
 }
 
-#cCarousel .arrow {
+#cCarousel .arrow-caroseul {
   position: absolute;
   top: 50%;
   display: flex;
@@ -35,7 +35,7 @@ body {
   background-color: #262525ae;
   cursor: pointer;
 }
-#cCarousel .arrow:hover{
+#cCarousel .arrow-caroseul:hover{
   background-color: #7b7b7b94;
 }
 
