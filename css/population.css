@@ -7,8 +7,6 @@
 	align-items: center;
 	/* position: relative; */
     margin-top: 30px;
-	/* top: 50%; 
-	transform: translate(-50%, -50%);*/
 }
 
 table {
@@ -20,7 +18,7 @@ table {
 
 th,
 td {
-	padding: 15px;
+	padding:15px;
 	background-color: rgba(255, 255, 255, 0.22);
 	color: #ffffff;
     font-family: "Roboto Condensed", sans-serif;
@@ -28,7 +26,7 @@ td {
 }
 
 th {
-	text-align: left;
+	text-align: center;
 }
 
 thead {
