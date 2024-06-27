@@ -1,14 +1,14 @@
-$('.arrow').on('click touch', function(e) {
 
-    e.preventDefault();
+const backToTopButton = document.querySelector('.back-to-top')
 
-    let arrow = $(this);
+const backToTop = () => {
+ if (window.scrollY >= 100) {
+backToTopButton.classList.add('show')
+ } else {
+backToTopButton.classList.remove('show')
+ }
+}
 
-    if(!arrow.hasClass('animate')) {
-        arrow.addClass('animate');
-        setTimeout(() => {
-            arrow.removeClass('animate');
-        }, 1600);
-    }
-
-});
+window.addEventListener('scroll', function () {
+ backToTop()
+})

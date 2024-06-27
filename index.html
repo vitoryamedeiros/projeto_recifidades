@@ -35,7 +35,7 @@
 
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/carrossel.css">
-    <link rel="stylesheet" href="css/scroll.css">
+    <link rel="stylesheet" href="css/scrollbar.css">
     
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"></script>
@@ -120,8 +120,9 @@
                 <p>
                     <strong class="call-action">Perde tempo não, tabacudo!</strong>     
                 </p>
-                <a class="scroll" href="#"></a>
             </div>
+
+            <a href="#" class="scroll" ></a>
 
             <div class="figure-apresentation">
 
@@ -134,39 +135,11 @@
         </section>
 
         <!-- ARROW TOP BUTTON -->
-        <div class="arrowTop">
-            <!-- <a href="#">
-                <img src="./assets/icons/setaTopo.png" alt="seta-topo">
-            </a>
-            <a href="index.html">
-                <span class="arrowbtn arrowbtn-up"></span>
-            </a>-->
-
-            <div class="demo">
-
-                <!-- <a href="" class="arrow left">
-                    <i></i>
-                    <svg>
-                        <use xlink:href="#circle">
-                    </svg>
-                </a> -->
-            
-                <a href="index.html" class="arrow">
-                    <i></i>
-                    <svg>
-                        <use xlink:href="#circle">
-                    </svg>
-                </a>
-            
-            </div>
-            
-            <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
-                <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" width="44px" height="44px" id="circle" fill="none" stroke="currentColor">
-                    <circle r="20" cy="22" cx="22" id="test">
-                </symbol>
-            </svg>
-
-        </div>
+        <a href="#inicio" class="arrow-up back-to-top" onclick="scrollToTop()">
+            <span class="left-arm"></span>
+            <span class="right-arm"></span>
+            <span class="arrow-slide"></span>
+        </a>
 
         <!-- SECTION HISTORIA -->
         <section id="history" class="section-history">
