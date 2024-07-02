@@ -10,3 +10,5 @@
 - PHP
 ### 📍 Imagens de Preview
 #### 🖥️ Desktop Version
+### Slide de apresentação
+https://www.canva.com/design/DAGJV4M8loU/FuZh2MKkGoO9h6iuWANZAQ/edit?utm_content=DAGJV4M8loU&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton
