@@ -11,9 +11,9 @@ https://vitoryamedeiros.github.io/projeto_recifidades/
 - PHP
 ### 📍 Imagens de Preview
 #### 🖥️ Desktop Version
-![recifidades-frame](https://github.com/user-attachments/assets/b647494f-4286-45d0-803d-b4d459a66139)
-![Captura de tela 2024-07-05 165603](https://github.com/user-attachments/assets/422440b2-1643-4bef-ac1b-f4047dc5e479)
+![Captura de tela 2024-07-05 165353](https://github.com/user-attachments/assets/e8784e15-bb19-43fe-aea8-90b1c391978b)
 ![Captura de tela 2024-07-05 165649](https://github.com/user-attachments/assets/392c1738-d951-489b-8bb7-65b414f940b9)
+![Captura de tela 2024-07-05 165603](https://github.com/user-attachments/assets/422440b2-1643-4bef-ac1b-f4047dc5e479)
 
 ### Slide de apresentação
 https://www.canva.com/design/DAGJV4M8loU/FuZh2MKkGoO9h6iuWANZAQ/edit?utm_content=DAGJV4M8loU&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton
